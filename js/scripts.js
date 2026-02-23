@@ -43,6 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
 				prevEl: '.swiper-button-prev'
 			}
 		})
+
+		// Countdown
+		$('.countdown').each(function () {
+			let timerDate = $(this).data('date')
+
+			$(this).countdown(timerDate, function (event) {
+				$(this).find('.hours').text(event.strftime('%H'))
+				$(this).find('.minutes').text(event.strftime('%M'))
+				$(this).find('.seconds').text(event.strftime('%S'))
+			})
+		})
 	}
 
 
@@ -330,6 +341,38 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
+	})
+
+
+	// Mini pop-up windows
+	$('.mini_modal_btn').click(function(e) {
+		e.preventDefault()
+
+		const modalId = $(this).data('modal-id')
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.mini_modal').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini_modal_btn').removeClass('active')
+			$(this).addClass('active')
+
+			$('.mini_modal').removeClass('active')
+			$(modalId).addClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Close the popup when you click outside of it
+	$(document).click(e => {
+		if ($(e.target).closest('.modal_cont').length === 0) {
+			$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
 	})
 
 

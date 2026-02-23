@@ -43,6 +43,7 @@
 
     .first_section .promotions .swiper-slide
     {
+        min-height: 260px;
         padding-block: var(--inner_gap) 66px;
     }
 

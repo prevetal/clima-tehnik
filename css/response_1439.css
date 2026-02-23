@@ -51,13 +51,39 @@
     }
 
 
-    header .catalog_btn
+    header .catalog_modal .mini_modal_btn
     {
         padding-inline: var(--inner_gap_s);
     }
 
 
-    header .links .link
+    header .catalog_modal .grid
+    {
+        grid-template-columns: 1fr 1fr 1fr 360px;
+    }
+
+
+    header .catalog_modal .promotion .product .price .current
+    {
+        font-size: 26px;
+    }
+
+
+    header .catalog_modal .promotion .product .thumb
+    {
+        width: 140px;
+
+        border-radius: 16px;
+    }
+
+
+    header .catalog_modal .banner
+    {
+        padding: var(--block_padding_xl);
+    }
+
+
+    header .icon_links .link
     {
         padding: var(--inner_gap_xxs);
     }
@@ -138,6 +164,7 @@
 
     .first_section .promotions .swiper-slide
     {
+        min-height: 268px;
         padding-block: var(--inner_gap) 72px;
     }
 

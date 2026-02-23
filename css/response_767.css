@@ -55,13 +55,13 @@
     }
 
 
-    .mob_header .links
+    .mob_header .icon_links
     {
         gap: 4px;
     }
 
 
-    .mob_header .links .link
+    .mob_header .icon_links .link
     {
         width: 36px;
     }
