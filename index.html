@@ -23,8 +23,6 @@
 		<meta name="msapplication-TileColor" content="#2B2F33">
 		<meta name="theme-color" content="#2B2F33">
 
-		<!-- Connecting fonts from Google -->
-
 		<!-- Connecting style files -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -33,6 +31,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/fonts.css">
 
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)">
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
@@ -235,12 +234,67 @@
 				<section class="mob_header">
 					<div class="cont">
 						<div class="logo">
-							<img src="images/logo.svg" alt="">
+							<img src="images/logo.png" alt="">
+							<span>территория комфорта</span>
+						</div>
+
+						<div class="contacts">
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="tg_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+								</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:info@climatehnik.com">info@climatehnik.com</a>
+							</div>
+
+							<button class="callback_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+
+								<span>Заказать звонок</span>
+							</button>
+						</div>
+
+						<div class="links">
+							<div><a href="/" class="link">
+								<span class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+								</span>
+							</a></div>
+
+							<div><a href="/" class="link">
+								<span class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+								</span>
+							</a></div>
+
+							<div><a href="/" class="link">
+								<span class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								</span>
+							</a></div>
 						</div>
 
 						<button class="mob_menu_btn">
 							<span></span>
 						</button>
+
+						<form action="" class="search">
+							<input type="text" name="" value="" class="input">
+
+							<div class="label">
+								<span>Поиск по каталогу, например <a href="/">Обогреватель</a></span>
+							</div>
+
+							<button type="submit" class="submit_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+						</form>
 					</div>
 				</section>
 
@@ -3462,60 +3516,76 @@
 							</a>
 						</div>
 
-						<div class="grid_row">
-							<div class="article">
-								<picture class="thumb">
-									<img src="images/tmp/article_thumb1.jpg" alt="" loading="lazy" class="cover">
-								</picture>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="article">
+										<picture class="thumb">
+											<img src="images/tmp/article_thumb1.jpg" alt="" loading="lazy" class="cover">
+										</picture>
 
-								<div class="info">
-									<div class="date">29 октября 2024</div>
+										<div class="info">
+											<div class="date">29 октября 2024</div>
 
-									<div class="name">
-										<a href="/">Новое персональное охлаждающее устройство</a>
+											<div class="name">
+												<a href="/">Новое персональное охлаждающее устройство</a>
+											</div>
+
+											<div class="desc">Японский производитель Fujitsu начинает продажи модернизированной версии персонального охлаждающего устройства, которое он впервые показал в прошлом году.</div>
+
+											<a href="/" class="link">читать дальше</a>
+										</div>
 									</div>
+								</div>
 
-									<div class="desc">Японский производитель Fujitsu начинает продажи модернизированной версии персонального охлаждающего устройства, которое он впервые показал в прошлом году.</div>
+								<div class="swiper-slide">
+									<div class="article">
+										<picture class="thumb">
+											<img src="images/tmp/article_thumb2.jpg" alt="" loading="lazy" class="cover">
+										</picture>
 
-									<a href="/" class="link">читать дальше</a>
+										<div class="info">
+											<div class="date">29 октября 2024</div>
+
+											<div class="name">
+												<a href="/">Низкотемпературная работа наружных блоков Hisense VRF</a>
+											</div>
+
+											<div class="desc">В век информационных технологий появляется все больше оборудования, которое требует охлаждения при своей работе.</div>
+
+											<a href="/" class="link">читать дальше</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="article">
+										<picture class="thumb">
+											<img src="images/tmp/article_thumb3.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="info">
+											<div class="date">29 октября 2024</div>
+
+											<div class="name">
+												<a href="/">За три года объем выбросов опасных фреонов снизился на 30%</a>
+											</div>
+
+											<div class="desc">Ученые выяснили, что в период с 2018 по 2020 год объем мировых выбросов наиболее опасных фреонов</div>
+
+											<a href="/" class="link">читать дальше</a>
+										</div>
+									</div>
 								</div>
 							</div>
 
-							<div class="article">
-								<picture class="thumb">
-									<img src="images/tmp/article_thumb2.jpg" alt="" loading="lazy" class="cover">
-								</picture>
+							<button class="swiper-button-prev">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</button>
 
-								<div class="info">
-									<div class="date">29 октября 2024</div>
-
-									<div class="name">
-										<a href="/">Низкотемпературная работа наружных блоков Hisense VRF</a>
-									</div>
-
-									<div class="desc">В век информационных технологий появляется все больше оборудования, которое требует охлаждения при своей работе.</div>
-
-									<a href="/" class="link">читать дальше</a>
-								</div>
-							</div>
-
-							<div class="article">
-								<picture class="thumb">
-									<img src="images/tmp/article_thumb3.jpg" alt="" loading="lazy" class="cover">
-								</picture>
-
-								<div class="info">
-									<div class="date">29 октября 2024</div>
-
-									<div class="name">
-										<a href="/">За три года объем выбросов опасных фреонов снизился на 30%</a>
-									</div>
-
-									<div class="desc">Ученые выяснили, что в период с 2018 по 2020 год объем мировых выбросов наиболее опасных фреонов</div>
-
-									<a href="/" class="link">читать дальше</a>
-								</div>
-							</div>
+							<button class="swiper-button-next">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</button>
 						</div>
 					</div>
 				</section>
@@ -3776,7 +3846,11 @@
 
 								<div class="links_wrap">
 									<div class="links">
-										<div class="title">Каталог</div>
+										<div class="title">
+											<span>Каталог</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
 
 										<div class="items">
 											<div><a href="/">Вентиляция</a></div>
@@ -3794,7 +3868,11 @@
 									</div>
 
 									<div class="links">
-										<div class="title">Покупателям</div>
+										<div class="title">
+											<span>Покупателям</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
 
 										<div class="items">
 											<div><a href="/">Оплата</a></div>
@@ -3812,7 +3890,11 @@
 									</div>
 
 									<div class="links">
-										<div class="title">Услуги</div>
+										<div class="title">
+											<span>Услуги</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
 
 										<div class="items">
 											<div><a href="/">Монтажные работы</a></div>

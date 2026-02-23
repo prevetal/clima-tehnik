@@ -6,5 +6,434 @@
     :root
     {
         --cont_padding: 20px;
+        --inner_gap_l: 24px;
+        --inner_gap: 20px;
+        --font_size_title_l: 32px;
+        --font_size_title: 28px;
+        --font_size_title_s: 20px;
+        --block_head_offset_l: 32px;
+        --block_head_offset: 28px;
+        --outside_gap: 60px;
+    }
+
+
+    .wrap .bg_wave
+    {
+        top: 0;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        margin-bottom: 0;
+        padding-block: var(--inner_gap_xs);
+
+        border: none;
+    }
+
+
+    .mob_header .logo
+    {
+        font-size: calc(var(--font_size_xs) - 1px);
+    }
+
+
+    .mob_header .logo img
+    {
+        width: 159px;
+        height: 16px;
+    }
+
+
+    .mob_header .contacts
+    {
+        display: none;
+    }
+
+
+    .mob_header .links
+    {
+        gap: 4px;
+    }
+
+
+    .mob_header .links .link
+    {
+        width: 36px;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        width: 36px;
+        margin-left: 4px;
+    }
+
+
+    .mob_header .search
+    {
+        margin-top: var(--inner_gap_xs);
+    }
+
+
+    .mob_header .search .input
+    {
+        height: 40px;
+    }
+
+
+    .mob_header .search .submit_btn .icon
+    {
+        width: 20px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .main_slider
+    {
+        width: 100%;
+    }
+
+
+    .first_section .main_slider .swiper-slide
+    {
+        height: 268px;
+        padding-inline: var(--block_padding_xl);
+
+        text-align: center;
+    }
+
+
+    .first_section .main_slider .info
+    {
+        align-content: center;
+        align-items: center;
+    }
+
+
+
+    .first_section .promotions
+    {
+        width: 100%;
+    }
+
+
+    .first_section .promotions .swiper-slide
+    {
+        padding-block: var(--inner_gap) 60px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .swiper-slide
+    {
+        visibility: visible;
+
+        width: 240px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .products .swiper-button-next,
+    .products .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    .catalog .category:nth-child(1)
+    {
+        padding-top: 200px;
+
+        grid-row: auto;
+    }
+
+
+    .catalog .category:nth-child(1) .thumb
+    {
+        width: 315px;
+    }
+
+
+    .catalog .category:nth-child(2)
+    {
+        height: auto;
+
+        grid-column: auto;
+    }
+
+
+    .catalog .category .thumb
+    {
+        width: 104px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .swiper
+    {
+        padding-bottom: 0;
+    }
+
+
+    .brands .swiper-slide
+    {
+        width: 240px;
+
+        transform: scale(1);
+    }
+
+
+    .brands .swiper-button-next,
+    .brands .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Banners
+    -------------*/
+    .banners .banner
+    {
+        min-height: 232px;
+        padding: var(--inner_gap);
+    }
+
+
+    .banners .banner .desc
+    {
+        width: 200px;
+
+        font-size: var(--font_size);
+    }
+
+
+    .banners .banner .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery .swiper-slide
+    {
+        width: 240px;
+
+        opacity: 1;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .swiper-button-next,
+    .articles .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .swiper-button-next,
+    .certs .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .certs .thumb img
+    {
+        height: 200px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper-button-next,
+    .reviews .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .reviews .swiper-slide
+    {
+        visibility: visible;
+
+        width: 320px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts,
+    footer .location
+    {
+        width: 100%;
+    }
+
+
+    footer .menu
+    {
+        width: 100%;
+        margin-bottom: var(--inner_gap);
+
+        font-size: var(--font_size_s);
+    }
+
+
+
+    footer .data .links_wrap
+    {
+        width: 100%;
+
+        gap: var(--inner_gap);
+    }
+
+
+    footer .data .links
+    {
+        width: 100%;
+        padding-bottom: var(--inner_gap_xs);
+
+        border-bottom: 1px solid var(--bg_grey_strong);
+    }
+
+
+    footer .data .links .title
+    {
+        pointer-events: auto;
+    }
+
+
+    footer .data .links .title .icon
+    {
+        display: block;
+    }
+
+
+    footer .data .links .items
+    {
+        display: none;
+
+        padding-bottom: var(--inner_gap_xxs);
+
+        font-size: var(--font_size_s);
+    }
+
+
+    footer .data .links .items > * + *
+    {
+        margin-top: var(--inner_gap_s);
+    }
+
+
+
+    footer .col_main .row
+    {
+        gap: var(--inner_gap);
+    }
+
+
+
+    footer .callback_btn,
+    footer .hiref_link
+    {
+        width: 100%;
+    }
+
+
+
+    footer .messengers
+    {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+
+
+    footer .copyright
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    footer .bottom .links
+    {
+        align-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-top: var(--inner_gap);
+
+        text-align: center;
+
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+        margin-top: var(--inner_gap);
+
+        text-align: center;
     }
 }

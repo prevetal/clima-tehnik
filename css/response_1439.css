@@ -1,0 +1,389 @@
+@media print,
+(max-width: 1439px)
+{
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .top
+    {
+        padding-block: var(--inner_gap_xs);
+    }
+
+
+    header .data
+    {
+        padding-block: var(--inner_gap_s);
+    }
+
+
+
+    header .contacts
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    header .callback_btn
+    {
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+    header .account .btn
+    {
+        padding-inline: var(--inner_gap_xs);
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 958px);
+    }
+
+
+    header .catalog_btn
+    {
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+    header .links .link
+    {
+        padding: var(--inner_gap_xxs);
+    }
+
+
+    header .categories
+    {
+        width: calc(100% - 360px - var(--inner_gap_xxs));
+        min-height: 60px;
+        padding-inline: var(--inner_gap_s) 40px;
+    }
+
+
+    header .industrial
+    {
+        width: 360px;
+    }
+
+
+    header .industrial .btn
+    {
+        height: 60px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+    .block_head a.title
+    {
+        gap: var(--inner_gap);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+
+    .first_section .main_slider
+    {
+        width: calc(100% - 368px);
+    }
+
+
+    .first_section .main_slider .swiper-slide
+    {
+        height: 268px;
+        padding-inline: 100px;
+    }
+
+
+    .first_section .main_slider .info
+    {
+        width: 300px;
+    }
+
+
+
+    .first_section .promotions
+    {
+        width: 360px;
+    }
+
+
+    .first_section .promotions .swiper-slide
+    {
+        padding-block: var(--inner_gap) 72px;
+    }
+
+
+    .first_section .promotions .product .price .current
+    {
+        font-size: 26px;
+    }
+
+
+    .first_section .promotions .product .thumb
+    {
+        width: 140px;
+
+        border-radius: 16px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        min-height: 152px;
+    }
+
+
+    .advantages .item .head
+    {
+        --icon_size: 40px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product .top
+    {
+        margin-bottom: var(--inner_gap_xs);
+    }
+
+
+    .products .product .features
+    {
+        gap: 4px;
+    }
+
+
+    .products .product .features > *
+    {
+        padding-bottom: 4px;
+    }
+
+
+    .products .product .buy_btn
+    {
+        padding-inline: var(--inner_gap);
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .grid
+    {
+        grid-template-columns: 500px 1fr 1fr;
+    }
+
+
+    .catalog .category:nth-child(2) > .sub
+    {
+        column-width: 168px;
+    }
+
+
+    .catalog .category .icon
+    {
+        width: 52px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .swiper
+    {
+        padding-bottom: 72px;
+    }
+
+
+
+    /*-------------
+        Banners
+    -------------*/
+    .banners .banner
+    {
+        min-height: 300px;
+    }
+
+
+    .banners .banner .desc
+    {
+        width: 260px;
+    }
+
+
+    .banners .banner .btn
+    {
+        height: 40px;
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+
+    /*--------------
+        Benefits
+    --------------*/
+    .benefits .item
+    {
+        min-height: 420px;
+    }
+
+
+    .benefits .item .image
+    {
+        height: 300px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid_row
+    {
+        --gap_x: var(--block_padding_l);
+        --gap_y: var(--block_padding_l);
+    }
+
+
+    .articles .article
+    {
+        padding: var(--inner_gap_xxs);
+
+        gap: var(--inner_gap);
+    }
+
+
+    .articles .article .name,
+    .articles .article .desc
+    {
+        width: 312px;
+    }
+
+
+    .articles .article .link
+    {
+        height: 40px;
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+
+    /*--------------
+        SEO text
+    --------------*/
+    .seo_text .block_head
+    {
+        width: 300px;
+    }
+
+
+    .seo_text .block_head .btn
+    {
+        height: 40px;
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+    .seo_text .text_block
+    {
+        width: calc(100% - 300px - var(--inner_gap));
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .bottom
+    {
+        padding-block: var(--inner_gap_s);
+    }
+
+
+
+    footer .col
+    {
+        width: 320px;
+    }
+
+
+
+    footer .contacts .phone
+    {
+        font-size: 28px;
+    }
+
+
+
+    footer .col_main
+    {
+        width: calc(100% - 400px);
+    }
+
+
+
+    footer .callback_btn
+    {
+        height: 40px;
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+
+    footer .hiref_link
+    {
+        height: 40px;
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+
+    footer .copyright
+    {
+        width: 508px;
+    }
+
+
+
+    footer .bottom .links
+    {
+        gap: var(--inner_gap);
+    }
+}

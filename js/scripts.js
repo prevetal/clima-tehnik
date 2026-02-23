@@ -68,19 +68,19 @@ document.addEventListener('DOMContentLoaded', function() {
 			spaceBetween: 8,
 			breakpoints: {
 				0: {
-					slidesPerView: 'auto'
+					slidesPerView: 'auto',
 				},
 				480: {
-					slidesPerView: 2
+					slidesPerView: 2,
 				},
 				768: {
-					slidesPerView: 3
+					slidesPerView: 3,
 				},
 				1024: {
-					slidesPerView: 4
+					slidesPerView: 4,
 				},
 				1280: {
-					slidesPerView: 5
+					slidesPerView: 5,
 				}
 			},
 			on: {
@@ -118,22 +118,22 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			spaceBetween: 20,
 			breakpoints: {
 				0: {
-					slidesPerView: 'auto'
-				},
-				480: {
-					slidesPerView: 2
+					spaceBetween: 8,
+					slidesPerView: 'auto',
 				},
 				768: {
-					slidesPerView: 3
+					spaceBetween: 16,
+					slidesPerView: 3,
 				},
 				1024: {
-					slidesPerView: 4
+					spaceBetween: 20,
+					slidesPerView: 4,
 				},
 				1280: {
-					slidesPerView: 5
+					spaceBetween: 20,
+					slidesPerView: 5,
 				}
 			}
 		}
@@ -157,19 +157,18 @@ document.addEventListener('DOMContentLoaded', function() {
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			lazy: true,
-			spaceBetween: 12,
 			breakpoints: {
 				0: {
-					slidesPerView: 'auto'
-				},
-				480: {
-					slidesPerView: 2
+					spaceBetween: 8,
+					slidesPerView: 'auto',
 				},
 				768: {
-					slidesPerView: 3
+					spaceBetween: 12,
+					slidesPerView: 3,
 				},
 				1024: {
-					slidesPerView: 4
+					spaceBetween: 12,
+					slidesPerView: 4,
 				}
 			},
 			on: {
@@ -188,6 +187,59 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Articles slider
+	const articlesSliders = [],
+		articles = document.querySelectorAll('.articles .swiper')
+
+	articles.forEach((el, i) => {
+		el.classList.add('articles_s' + i)
+
+		let options = {
+			loop: false,
+			loopAdditionalSlides: 1,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 8,
+					slidesPerView: 'auto',
+				},
+				768: {
+					spaceBetween: 16,
+					slidesPerView: 'auto',
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 3,
+				},
+				1280: {
+					spaceBetween: 40,
+					slidesPerView: 3,
+				}
+			},
+			on: {
+				init: swiper => setHeight(swiper.el.querySelectorAll('.article')),
+				resize: swiper => {
+					let items = swiper.el.querySelectorAll('.article')
+
+					items.forEach(el => el.style.height = 'auto')
+
+					setHeight(items)
+				}
+			}
+		}
+
+		articlesSliders.push(new Swiper('.articles_s' + i, options))
+	})
+
+
 	// Certs slider
 	const certsSliders = [],
 		certs = document.querySelectorAll('.certs .swiper')
@@ -196,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		el.classList.add('certs_s' + i)
 
 		let options = {
-			loop: true,
+			loop: false,
 			loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
@@ -210,16 +262,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			slidesPerView: 'auto',
 			breakpoints: {
 				0: {
-					slidesPerView: 'auto'
-				},
-				480: {
-					slidesPerView: 2
+					spaceBetween: 8,
 				},
 				768: {
-					slidesPerView: 3
+					spaceBetween: 16,
+				},
+				1024: {
+					spaceBetween: 24,
 				},
 				1280: {
-					spaceBetween: 31
+					spaceBetween: 31,
 				}
 			}
 		}
@@ -236,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		el.classList.add('reviews_s' + i)
 
 		let options = {
-			loop: true,
+			loop: false,
 			loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
@@ -247,19 +299,22 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			spaceBetween: 16,
 			breakpoints: {
 				0: {
-					slidesPerView: 'auto'
-				},
-				480: {
-					slidesPerView: 2
+					spaceBetween: 8,
+					slidesPerView: 'auto',
 				},
 				768: {
-					slidesPerView: 3
+					spaceBetween: 16,
+					slidesPerView: 2,
 				},
 				1024: {
-					slidesPerView: 4
+					spaceBetween: 16,
+					slidesPerView: 3,
+				},
+				1280: {
+					spaceBetween: 16,
+					slidesPerView: 4,
 				}
 			},
 			on: {
@@ -364,29 +419,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	// Mob. menu
-	$('.mob_header .mob_menu_btn').click((e) => {
-		e.preventDefault()
-
-		$('.mob_header .mob_menu_btn').toggleClass('active')
-		$('body').toggleClass('lock')
-		$('header').toggleClass('show')
-
-		$('.mob_header .mob_menu_btn').hasClass('active')
-			? $('.overlay').fadeIn(300)
-			: $('.overlay').fadeOut(200)
-	})
-
-
-	// 'Up' button
-	$('.buttonUp .btn').click((e) => {
-		e.preventDefault()
-
-		$('html, body').scrollTop(0)
-		// $('body, html').stop(false, false).animate({ scrollTop: 0 }, 1000)
-	})
-
-
 	// Phone input mask
 	const phoneInputs = document.querySelectorAll('input[type=tel]')
 
@@ -396,30 +428,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				mask: '+{7} (000) 000-00-00',
 				lazy: true
 			})
-		})
-	}
-
-
-	// Focus when clicking on the field name
-	const formLabels = document.querySelectorAll('form .label')
-
-	if (formLabels) {
-		formLabels.forEach(el => {
-			el.addEventListener('click', e => {
-				e.preventDefault()
-
-				el.closest('.line').querySelector('.input, textarea').focus()
-			})
-		})
-	}
-
-
-	// Select file
-	const fileInputs = document.querySelectorAll('form input[type=file]')
-
-	if (fileInputs) {
-		fileInputs.forEach(el => {
-			el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
 		})
 	}
 
@@ -450,15 +458,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		})
 	}
-})
 
 
+	// Footer
+	$('footer .data .links .title').click(function(e) {
+		e.preventDefault()
 
-window.addEventListener('scroll', function () {
-	// 'Up' button
-	$(window).scrollTop() > $(window).innerHeight()
-		? $('.buttonUp').fadeIn(300)
-		: $('.buttonUp').fadeOut(200)
+		$(this)
+			.toggleClass('active')
+			.next('.items').slideToggle(300)
+	})
 })
 
 

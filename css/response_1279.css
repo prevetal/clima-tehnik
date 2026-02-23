@@ -8,5 +8,290 @@
     {
         --custom_scroll_width: 5px;
         --custom_scroll_height: 5px;
+        --font_size_xl: 20px;
+        --font_size_title_l: 36px;
+        --font_size_title: 30px;
+        --font_size_title_s: 22px;
+        --block_head_offset_l: 40px;
+        --block_head_offset: 28px;
+        --outside_gap: 68px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: grid;
+        overflow: auto;
+        justify-content: flex-start;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin-block: 0 var(--inner_gap);
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--cont_padding);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .tabs::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .tabs .btn
+    {
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .main_slider
+    {
+        width: calc(100% - 360px);
+    }
+
+
+    .first_section .main_slider .swiper-slide
+    {
+        padding-inline: 80px;
+    }
+
+
+
+    .first_section .promotions
+    {
+        width: 352px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .grid
+    {
+        grid-template-columns: 400px 1fr 1fr;
+    }
+
+
+    .catalog .category:nth-child(1) > .sub
+    {
+        margin-top: 0;
+
+        column-count: 1;
+    }
+
+
+    .catalog .category:nth-child(2)
+    {
+        height: 160px;
+    }
+
+
+    .catalog .category:nth-child(2) .name
+    {
+        width: 148px;
+    }
+
+
+    .catalog .category:nth-child(2) > .sub
+    {
+        column-width: auto;
+    }
+
+
+    .catalog .category .thumb
+    {
+        right: var(--inner_gap_xs);
+
+        width: 80px;
+    }
+
+
+
+    /*-------------
+        Banners
+    -------------*/
+    .banners .banner
+    {
+        min-height: 260px;
+        padding: var(--inner_gap);
+
+        gap: var(--inner_gap);
+    }
+
+
+
+    /*--------------
+        Benefits
+    --------------*/
+    .benefits .item
+    {
+        min-height: 368px;
+    }
+
+
+    .benefits .item .desc
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+    .benefits .item .desc br
+    {
+        display: none;
+    }
+
+
+    .benefits .item .image
+    {
+        height: 240px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid_row
+    {
+        --gap_x: var(--inner_gap);
+        --gap_y: var(--inner_gap);
+    }
+
+
+    .articles .article .info
+    {
+        padding-block: 0 var(--inner_gap_s);
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+
+    /*--------------
+        SEO text
+    --------------*/
+    .seo_text .block_head
+    {
+        width: 248px;
+    }
+
+
+    .seo_text .text_block
+    {
+        width: calc(100% - 248px - var(--inner_gap));
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col
+    {
+        width: 280px;
+    }
+
+
+
+    footer .contacts .phone
+    {
+        font-size: 25px;
+    }
+
+
+
+    footer .col_main
+    {
+        width: calc(100% - 340px);
+    }
+
+
+
+    footer .data .links_wrap
+    {
+        width: auto;
+    }
+
+
+
+    footer .messengers
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    footer .messengers .icon + *
+    {
+        display: none;
+    }
+
+
+
+    footer .copyright
+    {
+        width: 380px;
+    }
+
+
+    footer .copyright br
+    {
+        display: none;
+    }
+
+
+
+    footer .bottom .links
+    {
+        flex-direction: column;
+
+        gap: 0;
     }
 }
