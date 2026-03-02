@@ -24,6 +24,17 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .f-button.is-close-button
+    {
+        top: var(--inner_gap_xxs);
+        right: var(--inner_gap_xxs);
+    }
+
+
+
     /*-----------------
         Mob. header
     -----------------*/
@@ -44,33 +55,8 @@
 
     .mob_header .logo img
     {
-        width: 159px;
-        height: 16px;
-    }
-
-
-    .mob_header .contacts
-    {
-        display: none;
-    }
-
-
-    .mob_header .icon_links
-    {
-        gap: 4px;
-    }
-
-
-    .mob_header .icon_links .link
-    {
-        width: 36px;
-    }
-
-
-    .mob_header .mob_menu_btn
-    {
-        width: 36px;
-        margin-left: 4px;
+        width: 166px;
+        height: 17px;
     }
 
 
@@ -80,15 +66,19 @@
     }
 
 
-    .mob_header .search .input
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
     {
-        height: 40px;
+        width: calc(100% - var(--form_columns_gap));
     }
 
 
-    .mob_header .search .submit_btn .icon
+    .form .contacts_method .grid_row
     {
-        width: 20px;
+        --items_per_line: 2;
     }
 
 
@@ -125,7 +115,7 @@
     }
 
 
-    .first_section .promotions .swiper-slide
+    .first_section .promotions .link
     {
         padding-block: var(--inner_gap) 60px;
     }
@@ -435,5 +425,60 @@
         margin-top: var(--inner_gap);
 
         text-align: center;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-inline: var(--inner_gap);
+    }
+
+
+
+    /*------------------
+        PopUp - City
+    ------------------*/
+    #city_modal .head,
+    #city_modal .data
+    {
+        padding: var(--inner_gap);
+    }
+
+
+    #city_modal .data
+    {
+        font-size: var(--font_size_s);
+
+        letter-spacing: .14px;
+    }
+
+
+    #city_modal .data .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
+    /*----------------------------
+        PopUp - Pick up points
+    ----------------------------*/
+    #pick_up_points_modal .list
+    {
+        order: 3;
+
+        width: 100%;
+        max-height: 320px;
+    }
+
+
+    #pick_up_points_modal .map
+    {
+        width: 100%;
+        height: 320px;
     }
 }

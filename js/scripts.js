@@ -423,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
 		},
 		tpl: {
-			closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg></button>',
+			closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close_big"></use></svg></button>',
 
 			main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
 				<div class="fancybox__backdrop"></div>
@@ -442,11 +442,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		Fancybox.show(
 			[{
-				src: document.getElementById(e.target.getAttribute('data-modal')),
+				src: `#${e.target.getAttribute('data-modal')}`,
 				type: 'inline'
 			}],
 			fancyOptions
 		)
+	})
+
+
+	$('.modal .close_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
 	})
 
 
@@ -473,6 +480,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			})
 		})
 	}
+
+
+	// Mob. menu
+	$('.mob_header .mob_menu_btn').click((e) => {
+		e.preventDefault()
+
+		$('.mob_header .mob_menu_btn').toggleClass('active')
+		$('body').toggleClass('lock')
+		$('.mob_menu').toggleClass('show')
+	})
 
 
 	if (is_touch_device()) {
@@ -510,6 +527,91 @@ document.addEventListener('DOMContentLoaded', function() {
 		$(this)
 			.toggleClass('active')
 			.next('.items').slideToggle(300)
+	})
+
+
+	// Search
+	$('.search .input').keyup(function() {
+		const _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				? _self.addClass('active')
+				: _self.removeClass('active')
+		})
+	})
+
+
+	// Form fields
+	$('.form .input').keyup(function() {
+		const _self = $(this)
+
+		setTimeout(() => {
+			_self.val().length
+				? _self.addClass('active')
+				: _self.removeClass('active')
+		})
+	})
+
+
+	// Form submit
+	$('#callback_modal form').submit(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show(
+			[{
+				src: '#success_message_modal',
+				type: 'inline'
+			}],
+			fancyOptions
+		)
+	})
+
+
+	// Location
+	$('header .location .confirm .btn.close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('header .location .confirm').hide()
+	})
+
+
+	// Smooth scrolling to anchor
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
+
+
+	// Accordion
+	$('body').on('click', '.accordion .accordion_item .head', function(e) {
+		e.preventDefault()
+
+		let item = $(this).closest('.accordion_item'),
+			accordion = $(this).closest('.accordion')
+
+		if (item.hasClass('active')) {
+			item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			accordion.find('.accordion_item').removeClass('active')
+			accordion.find('.data').slideUp(300)
+
+			item.addClass('active').find('.data').slideDown(300)
+		}
 	})
 })
 

@@ -44,17 +44,27 @@
 					<div class="top">
 						<div class="cont">
 							<div class="location">
-								<button class="btn">
+								<button class="current modal_btn" data-modal="city_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
 
 									<span>Москва</span>
 
 									<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
 								</button>
+
+								<div class="confirm">
+									<div>Ваш город <b>Москва</b>?</div>
+
+									<div class="btns">
+										<button class="btn close_btn">Да</button>
+
+										<button class="btn modal_btn" data-modal="city_modal">Выбрать другой</button>
+									</div>
+								</div>
 							</div>
 
-							<div class="pick_up_points_link">
-								<a href="/">Пункты выдачи</a>
+							<div class="pick_up_points_btn">
+								<button class="btn modal_btn" data-modal="pick_up_points_modal">Пункты выдачи</button>
 							</div>
 
 							<nav class="menu">
@@ -94,7 +104,7 @@
 									<a href="mailto:info@climatehnik.com">info@climatehnik.com</a>
 								</div>
 
-								<button class="callback_btn">
+								<button class="callback_btn modal_btn" data-modal="callback_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
 
 									<span>Заказать звонок</span>
@@ -528,19 +538,19 @@
 											</div>
 										</div>
 
-										<div class="banner l_h">
+										<a href="/" class="banner l_h">
 											<div class="info">
 												<div class="title">Кондиционеры настенные Hisense</div>
 
-												<a href="/" class="link">смотреть в каталоге</a>
+												<div class="btn">смотреть в каталоге</div>
 											</div>
 
 											<picture class="image">
 												<img src="images/tmp/catalog_modal_banner.jpg" alt="" loading="lazy" class="cover">
 											</picture>
-										</div>
+										</a>
 
-										<div class="promotion">
+										<a href="/" class="promotion">
 											<div class="head">
 												<div class="title">товар дня</div>
 
@@ -572,7 +582,7 @@
 													<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
 												</picture>
 											</div>
-										</div>
+										</a>
 									</div>
 								</div> -->
 
@@ -733,7 +743,7 @@
 										</div>
 
 										<div class="col w_2x">
-											<div class="promotion">
+											<a href="/" class="promotion">
 												<div class="head">
 													<div class="title">товар дня</div>
 
@@ -765,7 +775,7 @@
 														<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
 													</picture>
 												</div>
-											</div>
+											</a>
 										</div>
 									</div>
 								</div> -->
@@ -867,62 +877,26 @@
 
 				<section class="mob_header">
 					<div class="cont">
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_catalog"></use></svg>
+
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close_thin"></use></svg>
+						</button>
+
 						<div class="logo">
 							<img src="images/logo.png" alt="">
 							<span>территория комфорта</span>
 						</div>
 
-						<div class="contacts">
-							<div class="messengers">
-								<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
-								</a>
-
-								<a href="/" target="_blank" rel="noopener nofollow" class="tg_link">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
-								</a>
-							</div>
-
-							<div class="email">
-								<a href="mailto:info@climatehnik.com">info@climatehnik.com</a>
-							</div>
-
-							<button class="callback_btn">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
-
-								<span>Заказать звонок</span>
-							</button>
-						</div>
-
-						<div class="icon_links">
-							<div><a href="/" class="link">
-								<span class="icon">
-									<svg><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
-								</span>
-							</a></div>
-
-							<div><a href="/" class="link">
-								<span class="icon">
-									<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
-								</span>
-							</a></div>
-
-							<div><a href="/" class="link">
-								<span class="icon">
-									<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-								</span>
-							</a></div>
-						</div>
-
-						<button class="mob_menu_btn">
-							<span></span>
-						</button>
+						<a href="tel:8 (495) 159-55-66" class="phone">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+						</a>
 
 						<form action="" class="search">
 							<input type="text" name="" value="" class="input">
 
 							<div class="label">
-								<span>Поиск по каталогу, например <a href="/">Обогреватель</a></span>
+								<span>Поиск по каталогу</span>
 							</div>
 
 							<button type="submit" class="submit_btn">
@@ -930,6 +904,11 @@
 							</button>
 						</form>
 					</div>
+				</section>
+
+
+				<section class="mob_menu">
+
 				</section>
 
 
@@ -990,105 +969,111 @@
 							<div class="swiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
-										<div class="head">
-											<div class="title">товар дня</div>
+										<a href="/" class="link">
+											<div class="head">
+												<div class="title">товар дня</div>
 
-											<div class="countdown" data-date="2026/08/25 22:34:56">
-												<span class="hours"></span>
-												<span class="sep">:</span>
-												<span class="minutes"></span>
-												<span class="sep">:</span>
-												<span class="seconds"></span>
-											</div>
-										</div>
-
-										<div class="product">
-											<div class="info">
-												<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G<br> серии BLACK STAR CLASSIC A</div>
-
-												<div class="price">
-													<div class="current">27 190 ₽</div>
-
-													<div class="discount">40%</div>
-
-													<div class="old">
-														<span>38 190 ₽</span>
-													</div>
+												<div class="countdown" data-date="2026/08/25 22:34:56">
+													<span class="hours"></span>
+													<span class="sep">:</span>
+													<span class="minutes"></span>
+													<span class="sep">:</span>
+													<span class="seconds"></span>
 												</div>
 											</div>
 
-											<picture class="thumb">
-												<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
-											</picture>
-										</div>
+											<div class="product">
+												<div class="info">
+													<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G<br> серии BLACK STAR CLASSIC A</div>
+
+													<div class="price">
+														<div class="current">27 190 ₽</div>
+
+														<div class="discount">40%</div>
+
+														<div class="old">
+															<span>38 190 ₽</span>
+														</div>
+													</div>
+												</div>
+
+												<picture class="thumb">
+													<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
+												</picture>
+											</div>
+										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<div class="head">
-											<div class="title">товар дня</div>
+										<a href="/" class="link">
+											<div class="head">
+												<div class="title">товар дня</div>
 
-											<div class="countdown" data-date="2026/08/25 22:34:56">
-												<span class="hours"></span>
-												<span class="sep">:</span>
-												<span class="minutes"></span>
-												<span class="sep">:</span>
-												<span class="seconds"></span>
-											</div>
-										</div>
-
-										<div class="product">
-											<div class="info">
-												<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G<br> серии BLACK STAR CLASSIC A</div>
-
-												<div class="price">
-													<div class="current">27 190 ₽</div>
-
-													<div class="discount">40%</div>
-
-													<div class="old">
-														<span>38 190 ₽</span>
-													</div>
+												<div class="countdown" data-date="2026/08/25 22:34:56">
+													<span class="hours"></span>
+													<span class="sep">:</span>
+													<span class="minutes"></span>
+													<span class="sep">:</span>
+													<span class="seconds"></span>
 												</div>
 											</div>
 
-											<picture class="thumb">
-												<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
-											</picture>
-										</div>
+											<div class="product">
+												<div class="info">
+													<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G<br> серии BLACK STAR CLASSIC A</div>
+
+													<div class="price">
+														<div class="current">27 190 ₽</div>
+
+														<div class="discount">40%</div>
+
+														<div class="old">
+															<span>38 190 ₽</span>
+														</div>
+													</div>
+												</div>
+
+												<picture class="thumb">
+													<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
+												</picture>
+											</div>
+										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<div class="head">
-											<div class="title">товар дня</div>
+										<a href="/" class="link">
+											<div class="head">
+												<div class="title">товар дня</div>
 
-											<div class="countdown" data-date="2026/08/25 22:34:56">
-												<span class="hours"></span>
-												<span class="sep">:</span>
-												<span class="minutes"></span>
-												<span class="sep">:</span>
-												<span class="seconds"></span>
-											</div>
-										</div>
-
-										<div class="product">
-											<div class="info">
-												<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G<br> серии BLACK STAR CLASSIC A</div>
-
-												<div class="price">
-													<div class="current">27 190 ₽</div>
-
-													<div class="discount">40%</div>
-
-													<div class="old">
-														<span>38 190 ₽</span>
-													</div>
+												<div class="countdown" data-date="2026/08/25 22:34:56">
+													<span class="hours"></span>
+													<span class="sep">:</span>
+													<span class="minutes"></span>
+													<span class="sep">:</span>
+													<span class="seconds"></span>
 												</div>
 											</div>
 
-											<picture class="thumb">
-												<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
-											</picture>
-										</div>
+											<div class="product">
+												<div class="info">
+													<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G<br> серии BLACK STAR CLASSIC A</div>
+
+													<div class="price">
+														<div class="current">27 190 ₽</div>
+
+														<div class="discount">40%</div>
+
+														<div class="old">
+															<span>38 190 ₽</span>
+														</div>
+													</div>
+												</div>
+
+												<picture class="thumb">
+													<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
+												</picture>
+											</div>
+										</a>
 									</div>
 								</div>
 
@@ -3300,88 +3285,83 @@
 						</div>
 
 						<div class="grid">
-							<div class="category bg1">
+							<a href="/" class="category bg1">
 								<picture class="thumb left">
 									<img src="images/tmp/category_thumb1.png" alt="" loading="lazy">
 								</picture>
 
-								<div class="name">
-									<a href="/">Кондиционеры</a>
-								</div>
+								<div class="name">Кондиционеры</div>
 
 								<div class="sub">
 									<div>
-										<a href="/">Бытовые кондиционеры</a>
+										<div>Бытовые кондиционеры</div>
 
 										<div class="sub">
-											<div><a href="/">— Инверторные</a></div>
+											<div>— Инверторные</div>
 
-											<div><a href="/">— Неинверторные</a></div>
+											<div>— Неинверторные</div>
 
-											<div><a href="/">— C Wi-fi</a></div>
+											<div>— C Wi-fi</div>
 
-											<div><a href="/">— Цветные</a></div>
+											<div>— Цветные</div>
 										</div>
 									</div>
-									<div><a href="/">Мульти сплит-системы</a></div>
 
-									<div><a href="/">Мобильные кондиционеры</a></div>
+									<div>Мульти сплит-системы</div>
 
-									<div><a href="/">Кассетные кондиционеры</a></div>
+									<div>Мобильные кондиционеры</div>
 
-									<div><a href="/">Канальные кондиционеры</a></div>
+									<div>Кассетные кондиционеры</div>
 
-									<div><a href="/">Колонные кондиционеры</a></div>
+									<div>Канальные кондиционеры</div>
 
-									<div><a href="/">VRF-системы</a></div>
+									<div>Колонные кондиционеры</div>
 
-									<div><a href="/">Промышленные кондиционеры</a></div>
+									<div>VRF-системы</div>
+
+									<div>Промышленные кондиционеры</div>
 								</div>
 
 								<div class="arr">
 									<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 								</div>
-							</div>
+							</a>
 
-							<div class="category bg2">
+							<a href="/" class="category bg2">
 								<picture class="icon">
 									<img src="images/ic_category2.svg" alt="" loading="lazy">
 								</picture>
 
-								<div class="name">
-									<a href="/">Домашний микроклимат</a>
-								</div>
+								<div class="name">Домашний микроклимат</div>
 
 								<div class="sub">
-									<div><a href="/">Осушители</a></div>
+									<div>Осушители</div>
 
-									<div><a href="/">Увлажнители</a></div>
+									<div>Увлажнители</div>
 
-									<div><a href="/">Очистители</a></div>
+									<div>Очистители</div>
 
-									<div><a href="/">Мойки воздуха</a></div>
+									<div>Мойки воздуха</div>
 
-									<div><a href="/">Бытовые бризеры</a></div>
+									<div>Бытовые бризеры</div>
 
-									<div><a href="/">Тепловентиляторы</a></div>
+									<div>Тепловентиляторы</div>
 								</div>
 
 								<div class="arr">
 									<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 								</div>
-							</div>
+							</a>
 
-							<div class="category bg3">
-								<div class="name">
-									<a href="/">Водонагреватели</a>
-								</div>
+							<a href="/" class="category bg3">
+								<div class="name">Водонагреватели</div>
 
 								<div class="sub">
-									<div><a href="/">Накопительные</a></div>
+									<div>Накопительные</div>
 
-									<div><a href="/">Проточные</a></div>
+									<div>Проточные</div>
 
-									<div><a href="/">Газовые котлы</a></div>
+									<div>Газовые котлы</div>
 								</div>
 
 								<picture class="thumb">
@@ -3391,21 +3371,19 @@
 								<div class="arr">
 									<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 								</div>
-							</div>
+							</a>
 
-							<div class="category bg4">
-								<div class="name">
-									<a href="/">Обогрев</a>
-								</div>
+							<a href="/" class="category bg4">
+								<div class="name">Обогрев</div>
 
 								<div class="sub">
-									<div><a href="/">ИК обогреватели</a></div>
+									<div>ИК обогреватели</div>
 
-									<div><a href="/">Электрические конвекторы</a></div>
+									<div>Электрические конвекторы</div>
 
-									<div><a href="/">Масляные радиаторы</a></div>
+									<div>Масляные радиаторы</div>
 
-									<div><a href="/">Тепловые пушки</a></div>
+									<div>Тепловые пушки</div>
 								</div>
 
 								<picture class="thumb bottom">
@@ -3415,27 +3393,25 @@
 								<div class="arr">
 									<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 								</div>
-							</div>
+							</a>
 
-							<div class="category bg5">
+							<a href="/" class="category bg5">
 								<picture class="icon">
 									<img src="images/ic_category2.svg" alt="" loading="lazy">
 								</picture>
 
-								<div class="name">
-									<a href="/">Тепловые завесы</a>
-								</div>
+								<div class="name">Тепловые завесы</div>
 
 								<div class="sub">
-									<div><a href="/">Электрические</a></div>
+									<div>Электрические</div>
 
-									<div><a href="/">Водяные</a></div>
+									<div>Водяные</div>
 								</div>
 
 								<div class="arr">
 									<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 								</div>
-							</div>
+							</a>
 
 							<a href="/" class="category bg6">
 								<picture class="icon">
@@ -4614,12 +4590,222 @@
 			</footer>
 
 
-			<div class="overlay"></div>
-
 			<picture class="bg_wave">
 				<img src="images/bg_wave.svg" alt="" loading="lazy">
 			</picture>
 		</div>
+
+
+		<section class="modal" id="city_modal">
+			<div class="head">
+				<div class="modal_title">Выберите город</div>
+
+				<form action="" class="search">
+					<input type="text" name="" value="" class="input">
+
+					<div class="label">Ваш город</div>
+
+					<button type="submit" class="submit_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+					</button>
+				</form>
+			</div>
+
+			<div class="data">
+				<div class="grid_row">
+					<div><a href="/">Москва</a></div>
+					<div><a href="/">Ростов-на-Дону</a></div>
+					<div><a href="/">Ростов-на-Дону</a></div>
+					<div><a href="/">Санкт - Петербург</a></div>
+					<div><a href="/">Омск</a></div>
+					<div><a href="/">Омск</a></div>
+					<div><a href="/">Екатеринбург</a></div>
+					<div><a href="/">Волгоград</a></div>
+					<div><a href="/">Волгоград</a></div>
+					<div><a href="/">Нижний Новгород</a></div>
+					<div><a href="/">Саратов</a></div>
+					<div><a href="/">Саратов</a></div>
+					<div><a href="/">Пермь</a></div>
+					<div><a href="/">Калининград</a></div>
+					<div><a href="/">Калининград</a></div>
+					<div><a href="/">Новосибирск</a></div>
+					<div><a href="/">Владивосток</a></div>
+					<div><a href="/">Владивосток</a></div>
+					<div><a href="/">Казань</a></div>
+					<div><a href="/">Ярославль</a></div>
+					<div><a href="/">Ярославль</a></div>
+					<div><a href="/">Челябинск</a></div>
+					<div><a href="/">Махачкала</a></div>
+					<div><a href="/">Махачкала</a></div>
+					<div><a href="/">Краснодар</a></div>
+					<div><a href="/">Барнаул</a></div>
+					<div><a href="/">Барнаул</a></div>
+					<div><a href="/">Самара</a></div>
+					<div><a href="/">Хабаровск</a></div>
+					<div><a href="/">Хабаровск</a></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="pick_up_points_modal">
+			<div class="modal_title">Магазины и пункты выдачи</div>
+
+			<div class="modal_desc">Введите ваш адрес, чтобы найти ближайщие</div>
+
+			<div class="data">
+				<form action="" class="search">
+					<input type="text" name="" value="" class="input">
+
+					<div class="label">Ваш город</div>
+
+					<button type="submit" class="submit_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+					</button>
+				</form>
+
+				<div class="list">
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+				</div>
+
+				<div class="map">
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Заказать обратный звонок</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">Имя*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Телефон*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="line contacts_method">
+					<div class="label">Способ связи</div>
+
+					<div class="grid_row field">
+						<label>
+							<input type="radio" name="contacts_method">
+							<span>WhatsApp</span>
+						</label>
+
+						<label>
+							<input type="radio" name="contacts_method" checked>
+							<span>Telegram</span>
+						</label>
+
+						<label>
+							<input type="radio" name="contacts_method">
+							<span>Телефон</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Ваше сообщение или комментарий"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">отправить</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>отправить</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
+		</section>
+
+
+		<section class="modal success_message" id="success_message_modal">
+			<div class="modal_title">Запрос отправлен!</div>
+
+			<div class="modal_desc">Скоро мы перезвоним вам и ответим на все ваши вопросы</div>
+
+			<button class="btn close_btn">продолжить</button>
+		</section>
 
 
 		<!-- Connecting javascript files -->

@@ -35,6 +35,13 @@
 }
 
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    --swiper-navigation-color: var(--primary_color);
+}
+
+
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet

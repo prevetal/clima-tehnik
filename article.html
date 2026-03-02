@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#2B2F33">
+		<meta name="theme-color" content="#2B2F33">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/fonts.css">
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="top">
+						<div class="cont">
+							<div class="location">
+								<button class="current modal_btn" data-modal="city_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+
+									<span>Москва</span>
+
+									<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+								</button>
+
+								<div class="confirm">
+									<div>Ваш город <b>Москва</b>?</div>
+
+									<div class="btns">
+										<button class="btn close_btn">Да</button>
+
+										<button class="btn modal_btn" data-modal="city_modal">Выбрать другой</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="pick_up_points_btn">
+								<button class="btn modal_btn" data-modal="pick_up_points_modal">Пункты выдачи</button>
+							</div>
+
+							<nav class="menu">
+								<div class="item">
+									<a href="/" class="sub_link mark">Монтаж и услуги</a>
+								</div>
+
+								<div class="item">
+									<a href="/">О компании</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Оплата</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Доставка</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Контакты</a>
+								</div>
+							</nav>
+
+							<div class="contacts">
+								<div class="messengers">
+									<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="tg_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+									</a>
+								</div>
+
+								<div class="email">
+									<a href="mailto:info@climatehnik.com">info@climatehnik.com</a>
+								</div>
+
+								<button class="callback_btn modal_btn" data-modal="callback_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+
+									<span>Заказать звонок</span>
+								</button>
+							</div>
+
+							<div class="account">
+								<button class="btn login_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+									<span>Войти</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="data">
+						<div class="cont">
+							<a href="/" class="logo">
+								<img src="images/logo.png" alt="">
+								<span>территория комфорта</span>
+							</a>
+
+							<form action="" class="search">
+								<input type="text" name="" value="" class="input">
+
+								<div class="label">
+									<span>Поиск по каталогу, например <a href="/">Обогреватель</a></span>
+								</div>
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+							</form>
+
+							<div class="catalog_modal modal_cont">
+								<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_catalog"></use></svg>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+
+									<span>каталог товаров</span>
+								</button>
+
+								<div class="mini_modal" id="catalog_modal">
+									<div class="grid_row">
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/" class="sub_link">
+															<span><b>Кондиционирование</b></span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Вентиляция</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Проектирование</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/">
+															<span>Сервис</span>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Микроклимат</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Водонагреватели</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Фанкойлы</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+													</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Акции</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Новинки</span>
+														</a></div>
+													</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Бренды</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/">
+															<span>Мобильные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Настенные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Мульти сплит системы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Мобильные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Кассетные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Канальные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Колонные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>VRF-системы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Промышленные кондиционеры</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/">
+															<span>2 комнаты</span>
+														</a></div>
+
+														<div><a href="/">
+															<span><b>3 комнаты</b></span>
+														</a></div>
+
+														<div><a href="/">
+															<span>4 комнаты</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>5 комнат</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>до 8 комнат</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Внутренние блоки</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/">
+															<span>Настенные</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Кассетные</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Напольно-потолочные</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Канальные</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="title">Рекомендуем</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Конвекторы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Радиаторы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Тепловентиляторы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Керамические тепловентиляторы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Увлажнители воздуха</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="section">
+												<div class="links">
+													<div class="title">Популярные бренды</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Electrolux</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Hisense</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Hitachi</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Toshiba</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>BALLU</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Royal Thermo</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Zanussi</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- <div class="mini_modal" id="catalog_modal">
+									<div class="grid">
+										<div class="col l_h">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/" class="sub_link">
+															<span><b>Кондиционирование</b></span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Вентиляция</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Проектирование</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/">
+															<span>Сервис</span>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Микроклимат</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Водонагреватели</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Фанкойлы</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+													</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Акции</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Новинки</span>
+														</a></div>
+													</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Бренды</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/">
+															<span>Мобильные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Настенные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Мульти сплит системы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Мобильные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Кассетные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Канальные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Колонные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>VRF-системы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Промышленные кондиционеры</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="title">Популярные бренды</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Electrolux</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Hisense</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Hitachi</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Toshiba</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>BALLU</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Royal Thermo</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Zanussi</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Quattroclima</span>
+														</a></div>
+
+														<div><a href="/" class="all_link">
+															<span>И еще 24</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<a href="/" class="banner l_h">
+											<div class="info">
+												<div class="title">Кондиционеры настенные Hisense</div>
+
+												<div class="btn">смотреть в каталоге</div>
+											</div>
+
+											<picture class="image">
+												<img src="images/tmp/catalog_modal_banner.jpg" alt="" loading="lazy" class="cover">
+											</picture>
+										</a>
+
+										<a href="/" class="promotion">
+											<div class="head">
+												<div class="title">товар дня</div>
+
+												<div class="countdown" data-date="2026/08/25 22:34:56">
+													<span class="hours"></span>
+													<span class="sep">:</span>
+													<span class="minutes"></span>
+													<span class="sep">:</span>
+													<span class="seconds"></span>
+												</div>
+											</div>
+
+											<div class="product">
+												<div class="info">
+													<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G серии BLACK STAR CLASSIC A</div>
+
+													<div class="price">
+														<div class="current">27 190 ₽</div>
+
+														<div class="discount">40%</div>
+
+														<div class="old">
+															<span>38 190 ₽</span>
+														</div>
+													</div>
+												</div>
+
+												<picture class="thumb">
+													<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
+												</picture>
+											</div>
+										</a>
+									</div>
+								</div> -->
+
+								<!-- <div class="mini_modal" id="catalog_modal">
+									<div class="grid_row">
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/" class="sub_link">
+															<span><b>Кондиционирование</b></span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Вентиляция</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Проектирование</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/">
+															<span>Сервис</span>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Микроклимат</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Водонагреватели</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+
+														<div><a href="/" class="sub_link">
+															<span>Фанкойлы</span>
+
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor_thin"></use></svg>
+														</a></div>
+													</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Акции</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Новинки</span>
+														</a></div>
+													</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Бренды</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="items">
+														<div><a href="/">
+															<span>Мобильные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Настенные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Мульти сплит системы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Мобильные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Кассетные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Канальные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Колонные кондиционеры</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>VRF-системы</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Промышленные кондиционеры</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="section">
+												<div class="links">
+													<div class="title">Популярные бренды</div>
+
+													<div class="items">
+														<div><a href="/">
+															<span>Electrolux</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Hisense</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Hitachi</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Toshiba</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>BALLU</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Royal Thermo</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Zanussi</span>
+														</a></div>
+
+														<div><a href="/">
+															<span>Quattroclima</span>
+														</a></div>
+
+														<div><a href="/" class="all_link">
+															<span>И еще 24</span>
+														</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col w_2x">
+											<a href="/" class="promotion">
+												<div class="head">
+													<div class="title">товар дня</div>
+
+													<div class="countdown" data-date="2026/08/25 22:34:56">
+														<span class="hours"></span>
+														<span class="sep">:</span>
+														<span class="minutes"></span>
+														<span class="sep">:</span>
+														<span class="seconds"></span>
+													</div>
+												</div>
+
+												<div class="product">
+													<div class="info">
+														<div class="name">Кондиционер Hisense<br> AS-12HR4SVDDEB1G серии BLACK STAR CLASSIC A</div>
+
+														<div class="price">
+															<div class="current">27 190 ₽</div>
+
+															<div class="discount">40%</div>
+
+															<div class="old">
+																<span>38 190 ₽</span>
+															</div>
+														</div>
+													</div>
+
+													<picture class="thumb">
+														<img src="images/tmp/promotions_product_thumb.png" alt="" loading="lazy">
+													</picture>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div> -->
+							</div>
+
+							<div class="phones">
+								<div class="phone">
+									<div><a href="tel:8 (495) 159-55-66">8 (495) 159-55-66</a></div>
+
+									<div><a href="tel:8 (800) 159-55-66">8 (800) 159-55-66</a></div>
+								</div>
+
+								<div class="work_time">с 9:00 до 24:00<br> ежедневно</div>
+							</div>
+
+							<div class="icon_links">
+								<div><a href="/" class="link">
+									<span class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_compare"></use></svg>
+									</span>
+
+									<span>Сравнить</span>
+								</a></div>
+
+								<div><a href="/" class="link">
+									<span class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									</span>
+
+									<span>Избранное</span>
+								</a></div>
+
+								<div><a href="/" class="link">
+									<span class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+									</span>
+
+									<span>Корзина</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<div class="cont">
+							<div class="categories">
+								<div class="item">
+									<a href="/" class="sale">
+										<span>% Распродажа</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<span>Кондиционирование</span>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</a>
+								</div>
+
+								<svg class="sep"><use xlink:href="images/sprite.svg#ic_dots"></use></svg>
+
+								<div class="item">
+									<a href="/">
+										<span>Вентиляция</span>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									</a>
+								</div>
+
+								<svg class="sep"><use xlink:href="images/sprite.svg#ic_dots"></use></svg>
+
+								<div class="item">
+									<a href="/">
+										<span>Проектирование</span>
+									</a>
+								</div>
+
+								<svg class="sep"><use xlink:href="images/sprite.svg#ic_dots"></use></svg>
+
+								<div class="item">
+									<a href="/">
+										<span>Сервис</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="industrial">
+								<button class="btn">
+									<span>Промышленный сегмент</span>
+
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_catalog"></use></svg>
+
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close_thin"></use></svg>
+						</button>
+
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+							<span>территория комфорта</span>
+						</div>
+
+						<a href="tel:8 (495) 159-55-66" class="phone">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+						</a>
+
+						<form action="" class="search">
+							<input type="text" name="" value="" class="input">
+
+							<div class="label">
+								<span>Поиск по каталогу</span>
+							</div>
+
+							<button type="submit" class="submit_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+						</form>
+					</div>
+				</section>
+
+
+				<section class="mob_menu">
+
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+
+							<span class="sep"></span>
+
+							<span class="current">Новости, статьи</span>
+						</div>
+
+						<h1 class="page_title">Ваш гид по миру климатической техники</h1>
+
+						<div class="date">27 отктября 2024</div>
+					</div>
+				</section>
+
+
+				<section class="article_info content_flex block s_m">
+					<div class="cont row">
+						<section class="content">
+							<div class="text_block">
+								<p>Начало нового столетия стало приятной неожиданностью для отечественного покупателя. Обычным системам кондиционирования воздуха, ранее занимавшим значительную долю рынка, пришлось «подвинуться» – модельный ряд климатической техники дополнили очередные разработки таких брендов, как Toshiba, Samsung, Haier, Panasonic, Electra.</p>
+
+								<p>Особенность кондиционеров нового поколения – наличие функции ионизации воздуха.</p>
+
+								<p>Через некоторое время после появления оборудования нового формата его владельцы разделились на два противоположных лагеря. Одни доказывают полезность и эффективность дополнительной функции, другие, напротив, убеждают людей в бесполезности или даже опасности ионизации.</p>
+
+								<p>Кто из них прав? Споры на эту тему ведутся и поныне. Ясно одно – конечный выбор всегда остается за покупателем. В этой статье мы лишь попытаемся трезво оценить все преимущества и недостатки кондиционеров с ионизатором воздуха.</p>
+							</div>
+
+							<div class="anchors">
+								<div class="title">Содержание</div>
+
+								<div class="items">
+									<div><button class="btn scroll_btn" data-anchor="anchor1">Как выбрать увлажнитель воздуха</button></div>
+
+									<div><button class="btn scroll_btn" data-anchor="anchor1">На что смотрели мы и что можно оценить при выборе увлажнителя</button></div>
+
+									<div><button class="btn scroll_btn" data-anchor="anchor1">Лучшие увлажнители воздуха по нашей оценке</button></div>
+								</div>
+							</div>
+						</section>
+
+						<aside>
+							<picture class="image">
+								<img src="images/tmp/article_image.jpg" alt="" loading="lazy" class="cover">
+							</picture>
+						</aside>
+					</div>
+
+					<div class="cont row">
+						<section class="content">
+							<div class="text_block">
+								<h2>Что же это такое и какой принцип заложен в основу функционирования устройства?</h2>
+
+								<p>Начало нового столетия стало приятной неожиданностью для отечественного покупателя. Обычным системам кондиционирования воздуха, ранее занимавшим значительную долю рынка, пришлось «подвинуться» – модельный ряд климатической техники дополнили очередные разработки таких брендов, как Toshiba, Samsung, Haier, Panasonic, Electra.</p>
+
+								<img src="images/tmp/text_image.jpg" alt="">
+
+								<h3 id="anchor1">Вот какие параметры оценивали при выборе:</h3>
+
+								<ol>
+									<li>
+										<span><b>Производительность.</b> У бытовых увлажнителей варьируется от 0,2 до 0,7 л/ч.</span>
+									</li>
+
+									<li>
+										<span><b>Объем резервуара для воды.</b> У большинства моделей не превышает 2—3 л. Исключение — мойки воздуха, где объем бака для воды может составлять 5—7 л.</span>
+									</li>
+
+									<li>
+										<span><b>Уровень шума при работе.</b> Обычно не превышает 25—30 дБ — при поиске моделей мы ориентировались на эти значения. По звуку это  примерно сопоставимо с шепотом или работой кондиционера на низкой  скорости.</span>
+									</li>
+								</ol>
+
+								<h2 id="anchor2">На что смотрели мы и что можно оценить при выборе увлажнителя</h2>
+
+								<h3>Производительность</h3>
+
+								<p>Измеряется в объеме воды, которую прибор перерабатывает за час. Чем  выше производительность, тем быстрее увлажнитель испаряет или распыляет  воду и тем большую площадь покрывает. Например, для комнаты площадью 15—20 м² подойдет прибор с показателем 0,3—0,4 л/ч, для комнаты 30 м² — 0,6—0,7 л/ч.</p>
+
+								<p>Производители почти всегда указывают, на какую площадь рассчитана конкретная модель. Но лучше отнимать от указанного значения 20—30% или брать увлажнитель с небольшим запасом производительности.</p>
+
+								<h3>Объем резервуара для воды</h3>
+
+								<p>Этот параметр связан с предыдущим и определяет, как часто придется  подливать воду в устройство. Например, модель с двухлитровым баком  и производительностью 0,4 л/ч может работать без долива до пяти часов, но тут тоже все зависит от обслуживаемой площади.</p>
+
+								<h3>Уровень шума</h3>
+
+								<p>Иногда увлажнители ставят в спальню и оставляют работать на ночь. По рекомендациям ВОЗ, комфортный уровень шума для сна не должен превышать 30 дБ,  и большинство увлажнителей укладывается в это значение, а часть работает еще тише.</p>
+
+								<a href="" class="video_link fancy_img">
+									<picture class="thumb">
+										<img src="images/tmp/video_thumb.jpg" alt="" loading="lazy" class="cover">
+									</picture>
+
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+									</div>
+
+									<div class="info">
+										<div class="name">Видеообзор по типам увлажнителей</div>
+
+										<div class="duration">5:17</div>
+									</div>
+								</a>
+
+								<h3>Вот какие параметры оценивали при выборе:</h3>
+
+								<ol>
+									<li><b>Производительность.</b> У бытовых увлажнителей варьируется от 0,2 до 0,7 л/ч.</li>
+
+									<li><b>Объем резервуара для воды.</b> У большинства моделей не превышает 2—3 л. Исключение — мойки воздуха, где объем бака для воды может составлять 5—7 л.</li>
+
+									<li><b>Уровень шума при работе.</b> Обычно не превышает 25—30 дБ — при поиске моделей мы ориентировались на эти значения. По звуку это  примерно сопоставимо с шепотом или работой кондиционера на низкой  скорости.</li>
+								</ol>
+
+								<h2 id="anchor3">На что смотрели мы и что можно оценить при выборе увлажнителя</h2>
+
+								<p>Начало нового столетия стало приятной неожиданностью для отечественного покупателя. Обычным системам кондиционирования воздуха, ранее занимавшим значительную долю рынка, пришлось «подвинуться» – модельный ряд климатической техники дополнили очередные разработки таких брендов, как Toshiba, Samsung, Haier, Panasonic, Electra.</p>
+
+								<p>Особенность кондиционеров нового поколения – наличие функции ионизации воздуха.</p>
+
+								<p>Через некоторое время после появления оборудования нового формата его владельцы разделились на два противоположных лагеря. Одни доказывают полезность и эффективность дополнительной функции, другие, напротив, убеждают людей в бесполезности или даже опасности ионизации.</p>
+
+								<p>Кто из них прав? Споры на эту тему ведутся и поныне. Ясно одно – конечный выбор всегда остается за покупателем. В этой статье мы лишь попытаемся трезво оценить все преимущества и недостатки кондиционеров с ионизатором воздуха.</p>
+
+								<div class="notice">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
+
+									<div>
+										<b>ОБРАТИТЕ ВНИМАНИЕ</b><br>
+
+										<p>Модель выпускается в двух версиях — для китайского и глобального рынка. Различить их просто: у китайской версии на коробке иероглифы, у глобальной — английские буквы. Увлажнители различаются типом вилки, серверы для подключения к умному дому тоже разные. Пользователи отмечают, что проще купить глобальную версию, несмотря на то, что китайский вариант дешевле.</p>
+									</div>
+								</div>
+
+								<div class="products">
+									<div class="list">
+										<div class="product">
+											<picture class="thumb">
+												<img src="images/tmp/product_thumb1.png" alt="" loading="lazy" class="cover">
+											</picture>
+
+											<div class="name">Кондиционер Hisense AS-07HR4RYDDC00 серии BASIC A</div>
+
+											<div class="price">
+												<div class="current">27 190 ₽</div>
+
+												<div class="old">
+													<span>38 190 ₽</span>
+												</div>
+											</div>
+
+											<button class="buy_btn">купить</button>
+										</div>
+
+										<div class="product">
+											<picture class="thumb">
+												<img src="images/tmp/product_thumb1.png" alt="" loading="lazy" class="cover">
+											</picture>
+
+											<div class="name">Кондиционер Hisense AS-07HR4RYDDC00 серии BASIC A</div>
+
+											<div class="price">
+												<div class="current">27 190 ₽</div>
+
+												<div class="old">
+													<span>38 190 ₽</span>
+												</div>
+											</div>
+
+											<button class="buy_btn">купить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<aside>
+							<div class="other_links">
+								<div class="title">Смотрите также</div>
+
+								<div class="items">
+									<div><a href="/">Эко-дружелюбные кондиционеры для дома</a></div>
+
+									<div><a href="/">Комфорт летом — не только кондиционер</a></div>
+
+									<div><a href="/">Энергоэффективные обогреватели для дома</a></div>
+
+									<div><a href="/">Домашние сплит системы в 2025 году</a></div>
+								</div>
+							</div>
+
+							<div class="social">
+								<div class="likes">
+									<button class="btn">
+										<span>1 156</span>
+
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_like"></use></svg>
+									</button>
+
+									<div class="exp">Понравилось?<br> Поддержи лайком!</div>
+								</div>
+
+								<div class="share">
+									<div class="label">Поделиться</div>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="vk_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_share_vk"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="tg_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_share_tg"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_share_whatsapp"></use></svg>
+									</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="data">
+					<div class="cont">
+						<div class="col">
+							<div class="logo">
+								<img src="images/logo_image.png" alt="" class="img1">
+
+								<img src="images/logo.png" alt="" class="img2">
+
+								<span>территория<br> комфорта</span>
+							</div>
+
+							<div class="contacts">
+								<div class="phone">
+									<div><a href="tel:8 (495) 159-55-66">+7 (4842) 59-55-66</a> <small>доб. 1</small></div>
+
+									<div><a href="tel:8 (800) 159-55-66">8 (800) 159-55-66</a> <small>доб. 2</small></div>
+								</div>
+
+								<div class="email">
+									<a href="mailto:info@climatehnik.com">info@climatehnik.com</a>
+								</div>
+							</div>
+
+							<div class="location">
+								<div class="address">248019, Россия, Калуга,<br> Старообрядческий пер. 12, оф. 5</div>
+
+								<a href="/" class="map_link">Посмотреть на карте</a>
+							</div>
+						</div>
+
+						<div class="col_main">
+							<div class="row">
+								<div class="menu">
+									<div><a href="/">О компании</a></div>
+
+									<div><a href="/">Акции</a></div>
+
+									<div><a href="/">Покупателям</a></div>
+
+									<div><a href="/">Услуги</a></div>
+
+									<div><a href="/">Отзывы</a></div>
+
+									<div><a href="/">Сертификаты</a></div>
+
+									<div><a href="/">Новости</a></div>
+
+									<div><a href="/">Статьи</a></div>
+
+									<div><a href="/">Контакты</a></div>
+								</div>
+
+								<div class="links_wrap">
+									<div class="links">
+										<div class="title">
+											<span>Каталог</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="items">
+											<div><a href="/">Вентиляция</a></div>
+
+											<div><a href="/">Отопление</a></div>
+
+											<div><a href="/">Холодильные машины</a></div>
+
+											<div><a href="/">Бытовые кондиционеры</a></div>
+
+											<div><a href="/">Электрощитовое обор-е</a></div>
+
+											<div><a href="/">Шкафы управления (АСУ)</a></div>
+										</div>
+									</div>
+
+									<div class="links">
+										<div class="title">
+											<span>Покупателям</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="items">
+											<div><a href="/">Оплата</a></div>
+
+											<div><a href="/">Доставка</a></div>
+
+											<div><a href="/">Гарантии</a></div>
+
+											<div><a href="/">Обмен и возврат</a></div>
+
+											<div><a href="/">Пользовательское<br> соглашение</a></div>
+
+											<div><a href="/">Частые вопросы</a></div>
+										</div>
+									</div>
+
+									<div class="links">
+										<div class="title">
+											<span>Услуги</span>
+
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+
+										<div class="items">
+											<div><a href="/">Монтажные работы</a></div>
+
+											<div><a href="/">Проектирование</a></div>
+
+											<div><a href="/">Сервисное обслуживание</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<button class="callback_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+
+									<span>Заказать звонок</span>
+								</button>
+
+								<div class="links_wrap">
+									<a href="/" target="_blank" rel="noopener nofollow" class="hiref_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_diagonal"></use></svg>
+
+										<span>Прецизионные кондиционеры HiRef</span>
+									</a>
+
+									<div class="messengers">
+										<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+											<span class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+											</span>
+
+											<span>WhatsApp</span>
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow" class="tg_link">
+											<span class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+											</span>
+
+											<span>Telegram</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont">
+						<div class="copyright">Продажа, монтаж, обслуживание кондиционеров, отопления, вентиляции в Калуге.<br> 2025 &copy; КлимаТехник.</div>
+
+						<div class="links">
+							<div><a href="/">Политика обработки персональных данных</a></div>
+
+							<div><a href="/">Правила покупки и оферта</a></div>
+						</div>
+
+						<div class="creator">
+							<a href="/" target="_blank" rel="noopener">Создание сайта - <span>Белый Кот</span></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<section class="modal" id="city_modal">
+			<div class="head">
+				<div class="modal_title">Выберите город</div>
+
+				<form action="" class="search">
+					<input type="text" name="" value="" class="input">
+
+					<div class="label">Ваш город</div>
+
+					<button type="submit" class="submit_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+					</button>
+				</form>
+			</div>
+
+			<div class="data">
+				<div class="grid_row">
+					<div><a href="/">Москва</a></div>
+					<div><a href="/">Ростов-на-Дону</a></div>
+					<div><a href="/">Ростов-на-Дону</a></div>
+					<div><a href="/">Санкт - Петербург</a></div>
+					<div><a href="/">Омск</a></div>
+					<div><a href="/">Омск</a></div>
+					<div><a href="/">Екатеринбург</a></div>
+					<div><a href="/">Волгоград</a></div>
+					<div><a href="/">Волгоград</a></div>
+					<div><a href="/">Нижний Новгород</a></div>
+					<div><a href="/">Саратов</a></div>
+					<div><a href="/">Саратов</a></div>
+					<div><a href="/">Пермь</a></div>
+					<div><a href="/">Калининград</a></div>
+					<div><a href="/">Калининград</a></div>
+					<div><a href="/">Новосибирск</a></div>
+					<div><a href="/">Владивосток</a></div>
+					<div><a href="/">Владивосток</a></div>
+					<div><a href="/">Казань</a></div>
+					<div><a href="/">Ярославль</a></div>
+					<div><a href="/">Ярославль</a></div>
+					<div><a href="/">Челябинск</a></div>
+					<div><a href="/">Махачкала</a></div>
+					<div><a href="/">Махачкала</a></div>
+					<div><a href="/">Краснодар</a></div>
+					<div><a href="/">Барнаул</a></div>
+					<div><a href="/">Барнаул</a></div>
+					<div><a href="/">Самара</a></div>
+					<div><a href="/">Хабаровск</a></div>
+					<div><a href="/">Хабаровск</a></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="pick_up_points_modal">
+			<div class="modal_title">Магазины и пункты выдачи</div>
+
+			<div class="modal_desc">Введите ваш адрес, чтобы найти ближайщие</div>
+
+			<div class="data">
+				<form action="" class="search">
+					<input type="text" name="" value="" class="input">
+
+					<div class="label">Ваш город</div>
+
+					<button type="submit" class="submit_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+					</button>
+				</form>
+
+				<div class="list">
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+
+					<div class="item">
+						<div class="name">Пункт выдачи СДЭК</div>
+
+						<div class="address">Московская обл, Видное г, совхоза им. Ленина п, МКАД 25 км, владение 4, строение 3 (Павильон З 2.24)</div>
+
+						<div class="work_time">Пн-Пт 10:00-21:00, Сб-Вс 10:00-20:00</div>
+
+						<button class="btn">проложить маршрут</button>
+					</div>
+				</div>
+
+				<div class="map">
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Заказать обратный звонок</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">Имя*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Телефон*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="line contacts_method">
+					<div class="label">Способ связи</div>
+
+					<div class="grid_row field">
+						<label>
+							<input type="radio" name="contacts_method">
+							<span>WhatsApp</span>
+						</label>
+
+						<label>
+							<input type="radio" name="contacts_method" checked>
+							<span>Telegram</span>
+						</label>
+
+						<label>
+							<input type="radio" name="contacts_method">
+							<span>Телефон</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Ваше сообщение или комментарий"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">отправить</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>отправить</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
+		</section>
+
+
+		<section class="modal success_message" id="success_message_modal">
+			<div class="modal_title">Запрос отправлен!</div>
+
+			<div class="modal_desc">Скоро мы перезвоним вам и ответим на все ваши вопросы</div>
+
+			<button class="btn close_btn">продолжить</button>
+		</section>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

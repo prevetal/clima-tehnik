@@ -1,16 +1,6 @@
 @media print,
 (max-width: 1023px)
 {
-    /*-----------------
-        Mob. header
-    -----------------*/
-    .mob_header .email
-    {
-        display: none;
-    }
-
-
-
     /*-------------------
         First section
     -------------------*/
@@ -41,7 +31,7 @@
     }
 
 
-    .first_section .promotions .swiper-slide
+    .first_section .promotions .link
     {
         min-height: 260px;
         padding-block: var(--inner_gap) 66px;
@@ -303,5 +293,40 @@
     {
         width: 100%;
         margin-top: var(--inner_gap_xs);
+    }
+
+
+
+    /*------------------
+        PopUp - City
+    ------------------*/
+    #city_modal .data
+    {
+        font-size: var(--font_size);
+
+        letter-spacing: .16px;
+    }
+
+
+
+    /*----------------------------
+        PopUp - Pick up points
+    ----------------------------*/
+    #pick_up_points_modal
+    {
+        padding: var(--inner_gap);
+    }
+
+
+    #pick_up_points_modal .list
+    {
+        width: 260px;
+        max-height: 460px;
+    }
+
+
+    #pick_up_points_modal .map
+    {
+        width: calc(100% - 260px - var(--inner_gap));
     }
 }

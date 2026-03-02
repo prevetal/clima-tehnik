@@ -162,7 +162,7 @@
     }
 
 
-    .first_section .promotions .swiper-slide
+    .first_section .promotions .link
     {
         min-height: 268px;
         padding-block: var(--inner_gap) 72px;
