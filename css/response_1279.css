@@ -89,6 +89,24 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .social .likes
+    {
+        line-height: calc(100% + 6px);
+
+        gap: var(--inner_gap);
+    }
+
+
+    aside .social .share
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
@@ -227,6 +245,280 @@
     .seo_text .text_block
     {
         width: calc(100% - 248px - var(--inner_gap));
+    }
+
+
+
+    /*--------------------
+        Privacy policy
+    --------------------*/
+    .privacy_policy .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------------
+        FAQ categories
+    --------------------*/
+    .faq_categories
+    {
+        display: grid;
+        overflow: auto;
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap_xs);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .faq_categories::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .faq_categories::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .faq_categories > *
+    {
+        scroll-snap-align: start;
+    }
+
+
+
+    /*---------------------
+        Guarantees info
+    ---------------------*/
+    .guarantees_info .content
+    {
+        gap: var(--block_padding_xl);
+    }
+
+
+    .guarantees_info .data,
+    .guarantees_info .col
+    {
+        width: 100%;
+    }
+
+
+    .guarantees_info .add_question
+    {
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Payment info
+    ------------------*/
+    .payment_info .method .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .content
+    {
+        gap: var(--block_padding_xl);
+    }
+
+
+    .delivery_info .data,
+    .delivery_info .col
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .phones .grid_row
+    {
+        --items_per_line: 3;
+    }
+
+
+    .contacts_info .phones .val a
+    {
+        font-size: 21px;
+    }
+
+
+
+    .contacts_info .info .address
+    {
+        width: calc(100% - 308px);
+    }
+
+
+    .contacts_info .info .val
+    {
+        font-size: var(--font_size_l);
+    }
+
+
+    .contacts_info .info .work_time
+    {
+        width: 260px;
+    }
+
+
+
+    .contacts_info .map
+    {
+        height: 320px;
+    }
+
+
+
+    .contacts_info .write_to_us
+    {
+        gap: var(--inner_gap_l);
+    }
+
+
+    .contacts_info .write_to_us .title
+    {
+        gap: 40px;
+    }
+
+
+    .contacts_info .write_to_us .grid_row
+    {
+        --gap_x: var(--inner_gap);
+        --gap_y: var(--inner_gap);
+    }
+
+
+    .contacts_info .write_to_us .item .email
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    .contacts_info .pick_up_points .map
+    {
+        height: 440px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        --sidebar_width: 300px;
+    }
+
+
+    .article_info .content
+    {
+        width: calc(100% - var(--sidebar_width) - 40px);
+    }
+
+
+    .article_info .anchors
+    {
+        padding-block: var(--inner_gap);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .list .product .thumb
+    {
+        width: 108px;
+    }
+
+
+    .products .list .product .name
+    {
+        width: calc(100% - 364px);
+    }
+
+
+    .products .list .product .buy_btn
+    {
+        width: 112px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .grid_row
+    {
+        --items_per_line: 3;
+    }
+
+
+
+    /*----------------
+        Stock info
+    ----------------*/
+    .stock_info .image
+    {
+        width: 400px;
+    }
+
+
+    .stock_info .data
+    {
+        width: calc(100% - 400px - var(--inner_gap));
+        min-height: 0;
+
+        gap: var(--inner_gap);
+    }
+
+
+    .stock_info .share
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .stock_info .likes
+    {
+        line-height: calc(100% + 6px);
+
+        gap: var(--inner_gap_s);
     }
 
 

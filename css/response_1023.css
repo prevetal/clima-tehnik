@@ -1,6 +1,53 @@
 @media print,
 (max-width: 1023px)
 {
+    :root
+    {
+        --sidebar_width: 100%;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        margin-bottom: var(--inner_gap_l);
+
+        gap: var(--block_padding_l);
+    }
+
+
+    .content + aside
+    {
+        margin-top: var(--inner_gap_l);
+        margin-bottom: var(--inner_gap_l);
+    }
+
+
+
+    aside .links
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+    aside .links .items
+    {
+        font-size: var(--font_size);
+
+        gap: var(--inner_gap_xs);
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
@@ -212,6 +259,77 @@
 
 
     .seo_text .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------------
+        FAQ categories
+    --------------------*/
+    .faq_categories
+    {
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-inline: var(--cont_padding);
+
+        border-radius: 0;
+
+        scroll-padding: 0 var(--cont_padding);
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .section
+    {
+        gap: var(--inner_gap);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        --sidebar_width: 100%;
+    }
+
+
+    .article_info .cont + .cont .content
+    {
+        padding-top: var(--inner_gap_m);
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
+    /*----------------
+        Stock info
+    ----------------*/
+    .stock_info .cont
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .stock_info .image,
+    .stock_info .data,
+    .stock_info .social,
+    .stock_info .text_block
     {
         width: 100%;
     }

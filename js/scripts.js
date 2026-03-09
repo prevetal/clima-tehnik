@@ -913,6 +913,42 @@ document.addEventListener('DOMContentLoaded', function() {
 			.removeClass('grid_row')
 			.addClass('list_full')
 	})
+
+
+	// Product features
+	$('.product_data .features .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.features')
+
+		$(this).toggleClass('active')
+
+		$(this).hasClass('active')
+			? parent.find('.hide').addClass('show')
+			: parent.find('.hide').removeClass('show')
+	})
+
+
+	// Product install
+	$('.product_data .install .item .head').click(function(e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.item')
+
+		parent.toggleClass('active')
+		parent.find('.data').slideToggle(300)
+	})
+})
+
+
+
+window.addEventListener('load', function () {
+	// Product delivery methods
+	document.querySelectorAll('.product_data .delivery_methods .grid_row').forEach(el => {
+		let styles = getComputedStyle(el)
+
+		productsDeliveryMethodsHeight(el, parseInt(styles.getPropertyValue('--items_per_line')))
+	})
 })
 
 
@@ -925,6 +961,14 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Product delivery methods
+		document.querySelectorAll('.product_data .delivery_methods .grid_row').forEach(el => {
+			let styles = getComputedStyle(el)
+
+			productsDeliveryMethodsHeight(el, parseInt(styles.getPropertyValue('--items_per_line')))
+		})
 
 
 		// Mob. version
@@ -991,5 +1035,28 @@ function compareHeight() {
 		})
 
 		featureLabels.eq(key).innerHeight(height)
+	})
+}
+
+
+
+// Product delivery methods
+function productsDeliveryMethodsHeight(context, step) {
+	let start = 0,
+		finish = step,
+		methods = [...context.querySelectorAll('.method')],
+		methodsDesc = context.querySelectorAll('.desc'),
+		i = 0
+
+	methodsDesc.forEach(el => el.style.height = 'auto')
+
+	methods.forEach(el => {
+		methods.slice(start, finish).forEach(el => el.setAttribute('nodeList', i))
+
+		setHeight(context.querySelectorAll('[nodeList="' + i + '"] .desc'))
+
+		start = start + step
+		finish = finish + step
+		i++
 	})
 }

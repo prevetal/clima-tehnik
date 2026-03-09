@@ -35,6 +35,46 @@
 
 
 
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding-block: var(--inner_gap_xxs);
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 32px;
+        min-width: 32px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding-bottom: var(--inner_gap_xxs);
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination a.first,
+    .pagination a.last
+    {
+        display: none;
+    }
+
+
+
     /*-----------------
         Mob. header
     -----------------*/
@@ -79,6 +119,57 @@
     .form .contacts_method .grid_row
     {
         --items_per_line: 2;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: var(--block_head_offset_l);
+    }
+
+
+    .breadcrumbs
+    {
+        font-size: var(--font_size_xs);
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        margin-bottom: var(--block_padding_xl);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .text_block .video_link .icon
+    {
+        width: 72px;
+
+        border-width: 4px;
+    }
+
+
+    .text_block .video_link .icon svg
+    {
+        width: 24px;
+        height: 25px;
     }
 
 
@@ -151,6 +242,20 @@
     .products .swiper-button-prev
     {
         display: none;
+    }
+
+
+
+    .products .list .product .thumb
+    {
+        width: 116px;
+        margin-inline: auto;
+    }
+
+
+    .products .list .product .name
+    {
+        width: 100%;
     }
 
 
@@ -302,6 +407,229 @@
         pointer-events: auto;
 
         opacity: 1;
+    }
+
+
+
+    /*------------------
+        Payment info
+    ------------------*/
+    .payment_info .method .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .method .name
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .delivery_info .method .options
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .delivery_info .method .options > *
+    {
+        width: 100%;
+    }
+
+
+
+    .delivery_info .additional table th + th,
+    .delivery_info .additional table td + td
+    {
+        padding-left: var(--inner_gap_m);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .phones .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .contacts_info .phones .val a
+    {
+        font-size: 22px;
+    }
+
+
+
+    .contacts_info .info
+    {
+        margin-top: var(--block_padding_xl);
+
+        gap: var(--inner_gap_l);
+    }
+
+
+    .contacts_info .info .address,
+    .contacts_info .info .work_time
+    {
+        width: 100%;
+    }
+
+
+
+    .contacts_info .write_to_us
+    {
+        margin-top: var(--block_padding_xl);
+
+        gap: var(--block_padding_xl);
+    }
+
+
+    .contacts_info .write_to_us .title
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .contacts_info .write_to_us .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .list .article .thumb,
+    .articles .list .article .info
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .anchors .btn
+    {
+        text-decoration: underline;
+
+        border-bottom: none;
+
+        text-decoration-thickness: 1px;
+    }
+
+
+
+    /*---------------
+        Subscribe
+    ---------------*/
+    .subscribe
+    {
+        width: 100%;
+
+        font-size: var(--font_size);
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .grid_row
+    {
+        --gap_x: var(--inner_gap_s);
+        --gap_y: var(--inner_gap_s);
+        --items_per_line: 2;
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .grid_row
+    {
+        --gap_x: var(--inner_gap_s);
+        --gap_y: var(--inner_gap_s);
+        --items_per_line: 2;
+    }
+
+
+    .certs .grid_row .item
+    {
+        padding: var(--inner_gap_xs);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review .date
+    {
+        width: 100%;
+        margin-top: var(--inner_gap_xxs);
+    }
+
+
+    .reviews .review .author + .date
+    {
+        margin-top: 0;
+        padding-left: calc(60px + var(--inner_gap_s));
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .grid_row
+    {
+        --gap_y: var(--block_padding_xl);
+        --items_per_line: 1;
+    }
+
+
+
+    /*----------------
+        Stock info
+    ----------------*/
+    .stock_info .social
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        order: 2;
+
+        padding-block: var(--inner_gap_s);
+
+        gap: var(--inner_gap_s);
+    }
+
+
+    .stock_info .link a
+    {
+        width: 100%;
     }
 
 

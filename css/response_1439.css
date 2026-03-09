@@ -110,6 +110,16 @@
 
 
 
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        gap: var(--inner_gap);
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/
@@ -351,6 +361,207 @@
     .seo_text .text_block
     {
         width: calc(100% - 300px - var(--inner_gap));
+    }
+
+
+
+    /*---------------------
+        Guarantees info
+    ---------------------*/
+    .guarantees_info .data
+    {
+        width: calc(100% - 280px - var(--inner_gap_m));
+    }
+
+
+    .guarantees_info .col
+    {
+        width: 280px;
+    }
+
+
+    .guarantees_info .important,
+    .guarantees_info .add_question
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .data
+    {
+        width: calc(100% - 340px - var(--inner_gap_m));
+    }
+
+
+    .delivery_info .col
+    {
+        width: 340px;
+    }
+
+
+    .delivery_info .additional .desc
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .phones
+    {
+        padding: var(--inner_gap);
+    }
+
+
+    .contacts_info .phones .val a
+    {
+        font-size: 22px;
+    }
+
+
+
+    .contacts_info .info
+    {
+        margin-top: 48px;
+    }
+
+
+    .contacts_info .info .address
+    {
+        width: calc(100% - 492px);
+    }
+
+
+    .contacts_info .info .label
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    .contacts_info .map
+    {
+        height: 360px;
+    }
+
+
+    .contacts_info .write_to_us
+    {
+        margin-top: 48px;
+
+        gap: 40px;
+    }
+
+
+
+    .contacts_info .requisites .data
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    .contacts_info .pick_up_points .map
+    {
+        height: 480px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        --sidebar_width: 360px;
+    }
+
+
+    .article_info .content
+    {
+        width: calc(100% - var(--sidebar_width) - 60px);
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .item
+    {
+        padding-block: var(--inner_gap_m) var(--inner_gap);
+
+        font-size: var(--font_size);
+
+        gap: var(--inner_gap_m);
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info
+    {
+        padding-block: var(--inner_gap_m) var(--inner_gap);
+        padding-inline: var(--inner_gap);
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs .item
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .certs .grid_row .item
+    {
+        padding: var(--inner_gap_s);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .list .review
+    {
+        padding-inline: var(--inner_gap);
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .grid_row
+    {
+        --gap_x: var(--inner_gap);
+        --gap_y: var(--inner_gap_l);
+    }
+
+
+    .stocks .stock
+    {
+        gap: var(--inner_gap_m);
+    }
+
+
+    .stocks .stock .name
+    {
+        width: 360px;
+
+        font-size: var(--font_size_xl);
     }
 
 
