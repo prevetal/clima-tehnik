@@ -361,18 +361,22 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 10,
+					spaceBetween: 8,
 					slidesPerView: 2
 				},
 				768: {
-					spaceBetween: 20,
+					spaceBetween: 12,
 					slidesPerView: 2
 				},
 				1024: {
-					spaceBetween: 20,
+					spaceBetween: 12,
 					slidesPerView: 3
 				},
 				1280: {
+					spaceBetween: 12,
+					slidesPerView: 4
+				},
+				1440: {
 					spaceBetween: 20,
 					slidesPerView: 4
 				}

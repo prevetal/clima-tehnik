@@ -2548,6 +2548,146 @@ header .industrial .btn.active .icon
 }
 
 
+.mob_header .search .tips
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+    padding: var(--inner_gap_s);
+
+    z-index: 10;
+
+    border-radius: var(--border_radius_s);
+    background: var(--light_color);
+    box-shadow: 0 4px 28px 0 rgba(161, 180, 216, .20);
+
+    gap: var(--inner_gap_xxs);
+}
+
+
+.mob_header .search .tips.show
+{
+    display: flex;
+}
+
+
+.mob_header .search .tips .list
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--inner_gap_xxs);
+}
+
+
+.mob_header .search .tips .product
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: var(--font_size_s);
+
+    text-decoration: none;
+
+    color: var(--black_color);
+
+    gap: var(--inner_gap_xs);
+}
+
+
+.mob_header .search .tips .product .thumb
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 60px;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.mob_header .search .tips .product .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.mob_header .search .tips .product .thumb + *
+{
+    width: calc(100% - 60px - var(--inner_gap_xs));
+}
+
+
+.mob_header .search .tips .product .name
+{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+
+    transition: color .2s linear;
+    text-overflow: ellipsis;
+
+    -webkit-line-clamp: 2;
+}
+
+
+.mob_header .search .tips .product .price
+{
+    font-weight: 700;
+}
+
+
+.mob_header .search .tips .product:hover .name
+{
+    color: var(--primary_color);
+}
+
+
+.mob_header .search .tips .link a
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 36px;
+    padding-inline: var(--inner_gap);
+
+    font-size: var(--font_size_s);
+    font-weight: 500;
+    line-height: 1;
+
+    transition: background .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--light_color);
+    border-radius: var(--border_radius_s);
+    background: var(--red_color);
+}
+
+
+.mob_header .search .tips .link a:hover
+{
+    background: var(--primary_color);
+}
+
+
 
 /*-------------
     Sidebar
@@ -5370,6 +5510,8 @@ aside .category_links .spoler_btn.active span + span
     justify-content: space-between;
 
     margin-top: var(--inner_gap_s);
+
+    gap: var(--inner_gap_xxs);
 }
 
 
@@ -10783,6 +10925,8 @@ aside .category_links .spoler_btn.active span + span
 
 .order_success .desc a
 {
+    white-space: nowrap;
+
     color: var(--primary_color);
 
     text-decoration-thickness: 1px;

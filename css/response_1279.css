@@ -94,8 +94,6 @@
     -------------*/
     aside .social .likes
     {
-        line-height: calc(100% + 6px);
-
         gap: var(--inner_gap);
     }
 
@@ -451,6 +449,13 @@
     /*--------------
         Products
     --------------*/
+    .products .grid_row
+    {
+        --items_per_line: 4;
+    }
+
+
+
     .products .list .product .thumb
     {
         width: 108px;
@@ -516,9 +521,137 @@
 
     .stock_info .likes
     {
-        line-height: calc(100% + 6px);
-
         gap: var(--inner_gap_s);
+    }
+
+
+
+    /*---------------
+        Favorites
+    ---------------*/
+    .favorites .categories
+    {
+        display: grid;
+        overflow: auto;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-block: var(--inner_gap_xxs);
+        padding-inline: var(--cont_padding);
+
+        border-radius: 0;
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--cont_padding);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .favorites .categories::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .favorites .categories::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .favorites .categories > *
+    {
+        scroll-snap-align: start;
+    }
+
+
+
+    /*------------------
+        Compare info
+    -----------------*/
+    .compare_info .categories
+    {
+        display: grid;
+        overflow: auto;
+
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        padding-block: var(--inner_gap_xxs);
+        padding-inline: var(--cont_padding);
+
+        border-radius: 0;
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--cont_padding);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .compare_info .categories::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .compare_info .categories::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .compare_info .categories > *
+    {
+        scroll-snap-align: start;
+    }
+
+
+
+    /*--------------------
+        Order products
+    --------------------*/
+    .order_products .grid_row
+    {
+        --items_per_line: 7;
+    }
+
+
+
+    /*-----------------
+        Brands info
+    -----------------*/
+    .brands_info .filter .grid_row
+    {
+        --items_per_line: 3;
+    }
+
+
+    .brands_info .data .items > *
+    {
+        width: 145px;
+    }
+
+
+    .brands_info .data .items a
+    {
+        padding-block: var(--inner_gap_xxs);
     }
 
 

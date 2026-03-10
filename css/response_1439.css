@@ -403,12 +403,6 @@
     }
 
 
-    .delivery_info .additional .desc
-    {
-        line-height: calc(100% + 6px);
-    }
-
-
 
     /*-------------------
         Contacts info
@@ -438,12 +432,6 @@
     }
 
 
-    .contacts_info .info .label
-    {
-        line-height: calc(100% + 6px);
-    }
-
-
 
     .contacts_info .map
     {
@@ -456,13 +444,6 @@
         margin-top: 48px;
 
         gap: 40px;
-    }
-
-
-
-    .contacts_info .requisites .data
-    {
-        line-height: calc(100% + 6px);
     }
 
 
@@ -562,6 +543,129 @@
         width: 360px;
 
         font-size: var(--font_size_xl);
+    }
+
+
+
+    /*---------------
+        Favorites
+    ---------------*/
+    .favorites .categories a
+    {
+        padding-block: var(--inner_gap_xxs);
+
+        font-size: var(--font_size);
+    }
+
+
+
+    .favorites .empty
+    {
+        padding: var(--inner_gap_l);
+    }
+
+
+    .favorites .empty .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*------------------
+        Compare info
+    -----------------*/
+    .compare_info .categories a
+    {
+        padding-block: var(--inner_gap_xxs);
+
+        font-size: var(--font_size);
+    }
+
+
+
+    .compare_info .col_left
+    {
+        width: 220px;
+    }
+
+
+    .compare_info .col_main
+    {
+        width: calc(100% - 220px - var(--inner_gap));
+    }
+
+
+
+    .compare_info .compare_vals
+    {
+        margin-top: 60px;
+    }
+
+
+
+    .compare_info .empty
+    {
+        padding: var(--inner_gap_l);
+    }
+
+
+    .compare_info .empty .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------------
+        Order success
+    -------------------*/
+    .order_success .data
+    {
+        padding: var(--inner_gap_l);
+    }
+
+
+
+    /*-----------------
+        Brands info
+    -----------------*/
+    .brands_info .alphabet a
+    {
+        min-width: 40px;
+        padding: var(--inner_gap_xxs);
+
+        font-size: var(--font_size);
+    }
+
+
+
+    .brands_info .filter .grid_row
+    {
+        --items_per_line: 4;
+    }
+
+
+
+    .brands_info .data .item
+    {
+        padding-block: 0;
+    }
+
+
+    .brands_info .data .letter
+    {
+        padding-block: var(--inner_gap_xxs);
+
+        font-size: calc(var(--font_size_title_s) - 2px);
+    }
+
+
+    .brands_info .data .items
+    {
+        padding-block: var(--inner_gap_s);
+
+        font-size: var(--font_size);
     }
 
 

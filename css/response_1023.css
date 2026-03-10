@@ -126,6 +126,12 @@
     /*--------------
         Products
     --------------*/
+    .products .grid_row
+    {
+        --items_per_line: 3;
+    }
+
+
     .products .product .buy_btn
     {
         padding-inline: var(--inner_gap_s);
@@ -332,6 +338,90 @@
     .stock_info .text_block
     {
         width: 100%;
+    }
+
+
+
+    /*-------------------
+        Order success
+    -------------------*/
+    .order_success .data
+    {
+        padding: var(--inner_gap);
+    }
+
+
+    .order_success .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*--------------------
+        Order products
+    --------------------*/
+    .order_products .grid_row
+    {
+        display: grid;
+        overflow: auto;
+        justify-content: flex-start;
+
+        width: calc(100% + var(--inner_gap) * 2);
+        margin-block: 0;
+        margin-inline: calc(var(--inner_gap) * -1);
+        padding-inline: var(--inner_gap);
+
+        gap: var(--inner_gap_xs);
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        scroll-padding: 0 var(--inner_gap);
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+
+    .order_products .grid_row::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+
+    .order_products .grid_row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+
+    .order_products .grid_row > *
+    {
+        width: 112px;
+        margin: 0;
+
+        scroll-snap-align: start;
+    }
+
+
+
+    /*-----------------
+        Brands info
+    -----------------*/
+    .brands_info .filter .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
+    .brands_info .data .items > *
+    {
+        width: calc(50% - var(--inner_gap_m) / 2);
     }
 
 

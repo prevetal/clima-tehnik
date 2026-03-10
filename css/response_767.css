@@ -9,7 +9,7 @@
         --inner_gap_l: 24px;
         --inner_gap: 20px;
         --font_size_title_l: 32px;
-        --font_size_title: 28px;
+        --font_size_title: 26px;
         --font_size_title_s: 20px;
         --block_head_offset_l: 32px;
         --block_head_offset: 28px;
@@ -152,12 +152,6 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block
-    {
-        line-height: calc(100% + 6px);
-    }
-
-
     .text_block .video_link .icon
     {
         width: 72px;
@@ -226,6 +220,13 @@
     /*--------------
         Products
     --------------*/
+    .products .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
     .products .swiper-slide
     {
         visibility: visible;
@@ -242,6 +243,119 @@
     .products .swiper-button-prev
     {
         display: none;
+    }
+
+
+
+    .products .product
+    {
+        padding-block: 0 var(--inner_gap_xxs);
+        padding-inline: var(--inner_gap_xxs);
+
+        border-radius: var(--border_radius_s);
+    }
+
+
+    .products .product .top
+    {
+        margin-bottom: var(--inner_gap_xxs);
+        padding-block: var(--inner_gap_xxs);
+    }
+
+
+    .products .product .btns
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .products .product .stickers
+    {
+        gap: 2px;
+    }
+
+
+    .products .product .sticker
+    {
+        padding: 2px 4px 4px;
+
+        font-size: 10px;
+    }
+
+
+    .products .product .sticker.discount
+    {
+        padding-block: 1px 3px;
+        padding-inline: 3px;
+    }
+
+
+    .products .product .thumb
+    {
+        margin-bottom: var(--inner_gap_xxs);
+    }
+
+
+    .products .product .rating
+    {
+        font-size: var(--font_size_xs);
+    }
+
+
+    .products .product .rating .icon
+    {
+        position: relative;
+        top: -2px;
+
+        width: 14px;
+    }
+
+
+    .products .product .status .icon
+    {
+        position: relative;
+        top: -1px;
+
+        width: 14px;
+    }
+
+
+    .products .product .features
+    {
+        display: none;
+    }
+
+
+    .products .product .price
+    {
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        width: 100%;
+
+        gap: 4px;
+    }
+
+
+    .products .product .price .current
+    {
+        font-size: calc(var(--font_size_l) - 1px);
+    }
+
+
+    .products .product .price .old
+    {
+        font-size: calc(var(--font_size_xs) - 1px);
+    }
+
+
+    .products .product .buy_btn
+    {
+        width: 100%;
     }
 
 
@@ -630,6 +744,96 @@
     .stock_info .link a
     {
         width: 100%;
+    }
+
+
+
+    /*------------------
+        Compare info
+    -----------------*/
+    .compare_info .col_left
+    {
+        width: 100%;
+        margin-bottom: var(--inner_gap_s);
+    }
+
+
+    .compare_info .col_main
+    {
+        width: 100%;
+    }
+
+
+
+    .compare_info .swiper-controls,
+    .compare_info .compare_labels
+    {
+        display: none;
+    }
+
+
+
+    .compare_info .products .product .btns .icon
+    {
+        width: 14px;
+    }
+
+
+
+    .compare_info .compare_vals
+    {
+        margin-top: var(--inner_gap_l);
+
+        font-size: var(--font_size_s);
+    }
+
+
+    .compare_info .compare_vals > *
+    {
+        padding-block: var(--inner_gap_xxs);
+    }
+
+
+    .compare_info .compare_vals > *:before
+    {
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        margin-bottom: var(--inner_gap_xxs);
+
+        font-size: var(--font_size_xs);
+
+        content: attr(data-column);
+
+        opacity: .5;
+    }
+
+
+
+    /*-----------------
+        Brands info
+    -----------------*/
+    .brands_info .alphabet a
+    {
+        min-width: 43px;
+
+        font-size: var(--font_size_s);
+    }
+
+
+
+    .brands_info .filter .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    .brands_info .data .grid_row
+    {
+        --items_per_line: 1;
     }
 
 
