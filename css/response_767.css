@@ -110,7 +110,9 @@
     /*------------------
         Form elements
     ------------------*/
-    .form .columns > *
+    .form .columns > *,
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3
     {
         width: calc(100% - var(--form_columns_gap));
     }
@@ -135,6 +137,24 @@
     .breadcrumbs
     {
         font-size: var(--font_size_xs);
+    }
+
+
+    .page_head .row
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .page_title
+    {
+        width: 100%;
+    }
+
+
+    .page_head .help_btn
+    {
+        margin-left: 0;
     }
 
 
@@ -834,6 +854,82 @@
     .brands_info .data .grid_row
     {
         --items_per_line: 1;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .share_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Cart products
+    -------------------*/
+    .cart_products .product
+    {
+        position: relative;
+
+        padding-block: var(--inner_gap_m);
+    }
+
+
+    .cart_products .product_check
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 3;
+    }
+
+
+    .cart_products .info
+    {
+        width: calc(100% - 100px - var(--inner_gap_m));
+    }
+
+
+    .cart_products .options
+    {
+        padding-left: calc(100px + var(--inner_gap_m));
+    }
+
+
+    .cart_products .amount
+    {
+        margin-left: calc(100px + var(--inner_gap_m));
+    }
+
+
+    .cart_products .total_price
+    {
+        width: auto;
+    }
+
+
+    .cart_products .btns
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        z-index: 3;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .payment_methods
+    {
+        --items_per_line: 2;
     }
 
 

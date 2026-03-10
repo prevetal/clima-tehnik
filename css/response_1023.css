@@ -426,6 +426,75 @@
 
 
 
+    /*-------------------
+        Cart products
+    -------------------*/
+    .cart_products .info
+    {
+        width: calc(100% - 500px);
+    }
+
+
+    .cart_products .options
+    {
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    .cart_products .options .title
+    {
+        margin-bottom: 4px;
+    }
+
+
+    .cart_products .total_price
+    {
+        width: 124px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .cart_total .head
+    {
+        margin-bottom: var(--inner_gap_s);
+    }
+
+
+    .cart_info .cart_total .total_price
+    {
+        margin-top: var(--inner_gap_xxs);
+        padding-bottom: 0;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .type
+    {
+        padding-bottom: 0;
+    }
+
+
+    .checkout_info .payment_methods
+    {
+        --items_per_line: 4;
+        --gap_x: var(--inner_gap_s);
+        --gap_y: var(--inner_gap_s);
+    }
+
+
+    .checkout_info .delivery_methods .radio .field
+    {
+        width: 100%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

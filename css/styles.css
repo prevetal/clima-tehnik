@@ -9754,7 +9754,7 @@ aside .category_links .spoler_btn.active span + span
     margin-left: auto;
     padding-inline: var(--inner_gap_s);
 
-    font-size: calc(var(-font_size_s) - 1px);
+    font-size: calc(var(--font_size_s) - 1px);
     font-weight: 500;
 
     transition: .2s linear;
@@ -10158,6 +10158,12 @@ aside .category_links .spoler_btn.active span + span
 }
 
 
+.cart_products .checkbox .check + *
+{
+    max-width: calc(100% - 20px - var(--inner_gap_xxs));
+}
+
+
 .cart_products .checkbox input:checked + .check
 {
     border-color: var(--primary_color);
@@ -10424,9 +10430,13 @@ aside .category_links .spoler_btn.active span + span
     display: flex;
     flex-direction: column;
 
-    padding-block: var(--inner_gap_s) var(--inner_gap);
-
     gap: var(--inner_gap_m);
+}
+
+
+.checkout_info .section + .section
+{
+    padding-block: calc(var(--inner_gap_s) + var(--inner_gap)) 0;
 }
 
 

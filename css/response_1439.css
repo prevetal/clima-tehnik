@@ -670,6 +670,22 @@
 
 
 
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .col_main
+    {
+        width: calc(100% - 360px - var(--inner_gap));
+    }
+
+
+    .cart_info .col_right
+    {
+        width: 360px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
