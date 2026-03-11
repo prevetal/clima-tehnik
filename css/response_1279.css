@@ -672,9 +672,73 @@
     }
 
 
+
+    /*-------------------
+        Checkout info
+    -------------------*/
     .checkout_info .section + .section
     {
         padding-block: var(--inner_gap_l) 0;
+    }
+
+
+
+    /*------------
+        Orders
+    ------------*/
+    .orders .order .delivery_payment
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .orders .order .delivery_payment .sep
+    {
+        display: none;
+    }
+
+
+    .orders .order .product
+    {
+        width: 88px;
+
+        gap: 4px;
+    }
+
+
+
+    /*----------------
+        Order info
+    ----------------*/
+    .order_info .col_left
+    {
+        width: 340px;
+    }
+
+
+    .order_info .col_main
+    {
+        width: calc(100% - 340px - var(--inner_gap));
+    }
+
+
+    .order_info .cart_products .product .info
+    {
+        width: calc(100% - 344px);
+    }
+
+
+    .order_info .cart_products .total_price
+    {
+        width: 120px;
+    }
+
+
+    .order_info .cart_products .options
+    {
+        margin-top: var(--inner_gap_xxs);
     }
 
 

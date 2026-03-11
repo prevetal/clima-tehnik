@@ -142,6 +142,8 @@
 
     .page_head .row
     {
+        justify-content: space-between;
+
         gap: var(--inner_gap);
     }
 
@@ -154,6 +156,20 @@
 
     .page_head .help_btn
     {
+        margin-left: 0;
+    }
+
+
+    .page_head .back
+    {
+        order: 2;
+    }
+
+
+    .page_head .logout_btn
+    {
+        order: 3;
+
         margin-left: 0;
     }
 
@@ -930,6 +946,166 @@
     .checkout_info .payment_methods
     {
         --items_per_line: 2;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .lk_menu
+    {
+        justify-content: space-between;
+    }
+
+
+
+    /*-----------------------
+        LK info - Profile
+    -----------------------*/
+    .lk_info .profile .type
+    {
+        padding-bottom: 0;
+
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .lk_info .profile .submit.grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*------------
+        Orders
+    ------------*/
+    .orders .filter
+    {
+        margin-left: 0;
+
+        gap: var(--inner_gap_xs);
+    }
+
+
+    .orders .filter .item
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .orders .filter .period label input:checked + div
+    {
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+
+    .orders .order .status
+    {
+        min-width: 180px;
+    }
+
+
+    .orders .order .products_info
+    {
+        width: 100%;
+    }
+
+
+    .orders .order .delivery_payment
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .orders .order .delivery_payment .sep
+    {
+        display: none;
+    }
+
+
+    .orders .order .product
+    {
+        width: 72px;
+    }
+
+
+    .orders .order .product:nth-child(3) ~ .product
+    {
+        display: none;
+    }
+
+
+
+    .orders .bottom_controls .limit
+    {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+
+    .orders .bottom_controls .pagination
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Order info
+    ----------------*/
+    .order_info .head .status
+    {
+        width: 100%;
+        min-width: 160px;
+
+        font-size: var(--font_size);
+    }
+
+
+    .order_info .head .number,
+    .order_info .head .date
+    {
+        font-size: var(--font_size_l);
+    }
+
+
+
+    .order_info .cart_products .product
+    {
+        padding-block: var(--inner_gap_xs);
+    }
+
+
+    .order_info .cart_products .product .info
+    {
+        width: calc(100% - 120px);
+        margin-bottom: var(--inner_gap_xs);
+    }
+
+
+    .order_info .cart_products .options
+    {
+        padding-left: 0;
+    }
+
+
+    .order_info .cart_products .total_price
+    {
+        width: auto;
+        margin-left: auto;
+    }
+
+
+    .order_info .cart_products .options .checkbox
+    {
+        font-size: var(--font_size_s);
     }
 
 
