@@ -787,6 +787,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Products filter
+	$('.products_filter .mob_toggle').click(function(e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.products_filter')
+
+		$(this).toggleClass('active')
+
+		parent.find('.form').slideToggle(300)
+	})
+
+
 	$('.products_filter .item .name').click(function(e) {
 		e.preventDefault()
 
@@ -892,6 +903,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Products view
+	if (WW < 1280) {
+		$('.products').find('.list_full')
+			.removeClass('list_full')
+			.addClass('grid_row')
+	}
+
 	$('.products_head .view .grid_btn').click(function(e) {
 		e.preventDefault()
 
@@ -965,6 +982,14 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Products
+		if (WW < 1280) {
+			$('.products').find('.list_full')
+				.removeClass('list_full')
+				.addClass('grid_row')
+		}
 
 
 		// Product delivery methods

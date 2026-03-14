@@ -6,6 +6,7 @@
     -------------------*/
     :root
     {
+        --sidebar_width: 248px;
         --custom_scroll_width: 5px;
         --custom_scroll_height: 5px;
         --font_size_xl: 20px;
@@ -105,6 +106,16 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .banner
+    {
+        padding-inline: 60px;
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
@@ -124,6 +135,16 @@
     .first_section .promotions
     {
         width: 352px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .bg
+    {
+        top: -672px;
     }
 
 
@@ -446,6 +467,32 @@
 
 
 
+    /*---------------------
+        Products filter
+    ---------------------*/
+    .products_filter .item .name span
+    {
+        width: calc(100% - 20px - var(--inner_gap_xxs));
+    }
+
+
+    .products_filter .item .name .icon
+    {
+        width: 20px;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head .view
+    {
+        display: none;
+    }
+
+
+
     /*--------------
         Products
     --------------*/
@@ -471,6 +518,19 @@
     .products .list .product .buy_btn
     {
         width: 112px;
+    }
+
+
+
+    .content .products .grid_row
+    {
+        --items_per_line: 3;
+    }
+
+
+    .content .products .product .buy_btn
+    {
+        padding-inline: var(--inner_gap_s);
     }
 
 
@@ -739,6 +799,89 @@
     .order_info .cart_products .options
     {
         margin-top: var(--inner_gap_xxs);
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head .data
+    {
+        min-height: 200px;
+        padding: var(--block_padding_xl);
+    }
+
+
+    .about_head .title
+    {
+        width: 472px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .block_head .title,
+    .why_we .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .why_we .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .why_we .item:nth-child(3)
+    {
+        background: var(--bg_grey);
+    }
+
+    .why_we .item:nth-child(4)
+    {
+        background: #eaf1fa;
+    }
+
+
+    .why_we .bg
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Founder
+    -------------*/
+    .founder .data
+    {
+        min-height: 360px;
+        padding: var(--block_padding_xl);
+    }
+
+
+    .founder .info
+    {
+        width: calc(100% - 284px);
+    }
+
+
+    .founder .desc
+    {
+        font-size: var(--font_size);
+        line-height: calc(100% + 7px);
+    }
+
+
+    .founder .photo
+    {
+        right: 0;
+
+        width: 340px;
     }
 
 

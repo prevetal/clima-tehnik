@@ -1,6 +1,16 @@
 @media print,
 (max-width: 1439px)
 {
+    /*-------------------
+        Global styles
+    -------------------*/
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - var(--inner_gap));
+    }
+
+
+
     /*----------
         Tabs
     ----------*/
@@ -130,7 +140,8 @@
 
 
 
-    .page_head .back a
+    .page_head .back a,
+    .page_head .logout_btn
     {
         height: 40px;
 
@@ -138,11 +149,10 @@
     }
 
 
-    .page_head .logout_btn
-    {
-        height: 40px;
 
-        font-size: var(--font_size);
+    .page_head .banner
+    {
+        padding-inline: 80px;
     }
 
 
@@ -237,6 +247,16 @@
 
 
 
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head .sort
+    {
+        gap: var(--inner_gap_xs);
+    }
+
+
+
     /*--------------
         Products
     --------------*/
@@ -261,6 +281,52 @@
     .products .product .buy_btn
     {
         padding-inline: var(--inner_gap);
+    }
+
+
+
+    .products .list_full .product
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .products .list_full .product .image
+    {
+        height: 100px;
+    }
+
+
+    .products .list_full .product .unification
+    {
+        width: calc(100% - 594px);
+
+        gap: var(--inner_gap);
+    }
+
+
+    .products .list_full .product .features
+    {
+        width: 248px;
+    }
+
+
+    .products .list_full .product .bottom
+    {
+        width: 120px;
+    }
+
+
+
+    .content .products .product .buy_btn
+    {
+        padding-inline: var(--inner_gap_m);
+    }
+
+
+    .products .bottom_controls
+    {
+        margin-top: var(--inner_gap);
     }
 
 
@@ -799,6 +865,75 @@
     .order_info .cart_products .total_price
     {
         width: 140px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head .data
+    {
+        min-height: 260px;
+        padding: var(-cont_padding_double);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .block_head .title
+    {
+        width: 400px;
+    }
+
+
+    .why_we .block_head .desc
+    {
+        width: calc(100% - 448px);
+    }
+
+
+
+    /*-------------
+        Founder
+    -------------*/
+    .founder .data
+    {
+        min-height: 400px;
+        padding: 60px;
+    }
+
+
+    .founder .info
+    {
+        width: 700px;
+    }
+
+
+    .founder .desc
+    {
+        font-size: var(--font_size_l);
+        line-height: calc(100% + 8px);
+    }
+
+
+    .founder .photo
+    {
+        right: 48px;
+
+        width: 390px;
+    }
+
+
+
+    /*---------------------
+        Filter selected
+    ---------------------*/
+    .filter_selected
+    {
+        margin-bottom: var(--inner_gap);
     }
 
 

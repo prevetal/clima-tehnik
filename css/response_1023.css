@@ -48,8 +48,23 @@
 
 
 
+    aside .mob_links
+    {
+        display: block;
+    }
+
+
+    aside .mob_links .links
+    {
+        display: flex;
+    }
+
+
+
     aside .links
     {
+        display: none;
+
         gap: var(--inner_gap_s);
     }
 
@@ -59,6 +74,28 @@
         font-size: var(--font_size);
 
         gap: var(--inner_gap_xs);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        width: 100%;
+    }
+
+
+    .page_head .help_btn
+    {
+        margin-left: 0;
+    }
+
+
+    .page_head .banner
+    {
+        padding-inline: var(--block_padding_xl);
     }
 
 
@@ -134,6 +171,41 @@
     .advantages .grid_row
     {
         --items_per_line: 2;
+    }
+
+
+
+    /*---------------------
+        Products filter
+    ---------------------*/
+    .products_filter .mob_toggle
+    {
+        display: flex;
+    }
+
+
+    .products_filter .form
+    {
+        display: none;
+    }
+
+
+    .products_filter .item
+    {
+        padding-block: var(--inner_gap_s);
+        padding-inline: var(--inner_gap_s);
+    }
+
+
+    .products_filter .item + .item
+    {
+        margin-top: var(--inner_gap_xxs);
+    }
+
+
+    .products_filter .item .grid_row
+    {
+        --items_per_line: 4;
     }
 
 
@@ -612,6 +684,69 @@
     .order_info .col_main
     {
         width: 100%;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        padding-bottom: 0;
+    }
+
+
+    .about_head .data
+    {
+        min-height: 180px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .why_we .item
+    {
+        gap: var(--inner_gap_s);
+    }
+
+
+
+    /*-------------
+        Founder
+    -------------*/
+    .founder .data
+    {
+        min-height: 440px;
+    }
+
+
+    .founder .info
+    {
+        width: 100%;
+    }
+
+
+    .founder .desc,
+    .founder .author
+    {
+        padding-right: 224px;
+    }
+
+
+    .founder .photo
+    {
+        right: -12px;
+
+        width: 272px;
     }
 
 
