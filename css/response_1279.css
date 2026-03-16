@@ -886,6 +886,66 @@
 
 
 
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        --sidebar_width: 300px;
+    }
+
+
+    .product_info .col_left
+    {
+        width: 360px;
+    }
+
+
+    .product_info .col_center
+    {
+        width: calc(100% - 360px - var(--inner_gap));
+    }
+
+
+
+    .product_info .brand .info .name
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .tabs
+    {
+        width: 100%;
+        margin-inline: 0;
+    }
+
+
+
+    .product_data .features .spoler_btn
+    {
+        margin-top: var(--inner_gap);
+    }
+
+
+
+    .product_data .payment_methods .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .product_data .steps .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -1357,6 +1357,120 @@
 
 
 
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .col_left,
+    .product_info .col_center
+    {
+        width: 100%;
+    }
+
+
+    .product_info aside
+    {
+        position: relative;
+    }
+
+
+
+    .product_info .btns .icon
+    {
+        width: 20px;
+    }
+
+
+
+    .product_info .images .thumbs
+    {
+        padding-inline: 40px;
+    }
+
+
+    .product_info .images .thumbs .swiper-button-next,
+    .product_info .images .thumbs .swiper-button-prev
+    {
+        --swiper-navigation-sides-offset: -40px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_info .brand .info .name
+    {
+        width: calc(100% - 82px);
+    }
+
+
+
+    .product_data .features .grid_row
+    {
+        --gap_y: 0;
+        --items_per_line: 1;
+    }
+
+
+
+    .product_data .payment_methods .grid_row
+    {
+        --items_per_line: 1;
+        --gap_y: var(--inner_gap_xs);
+    }
+
+
+    .product_data .payment_methods .method
+    {
+        padding: var(--inner_gap_s);
+    }
+
+
+
+    .product_data .delivery_methods .grid_row
+    {
+        --items_per_line: 1;
+        --gap_y: var(--inner_gap_s);
+    }
+
+
+    .product_data .delivery_methods .method .desc
+    {
+        height: auto !important;
+    }
+
+
+    .product_data .delivery_methods .method .desc br
+    {
+        display: none;
+    }
+
+
+
+    .product_data .steps .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    .product_data .install .items .label
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .file .name
+    {
+        width: 100%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

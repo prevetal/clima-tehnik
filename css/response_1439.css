@@ -938,6 +938,96 @@
 
 
 
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        --sidebar_width: 372px;
+    }
+
+
+    .product_info.content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - var(--inner_gap));
+    }
+
+
+    .product_info .col_left
+    {
+        width: 480px;
+    }
+
+
+    .product_info .col_center
+    {
+        width: calc(100% - 480px - var(--inner_gap));
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data
+    {
+        margin-top: var(--block_padding_xl);
+    }
+
+
+    .product_data .tabs .btn
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    .product_data .features .grid_row
+    {
+        --gap_y: var(--inner_gap_xxs);
+    }
+
+
+    .product_data .features .item
+    {
+        min-height: 52px;
+        padding-block: var(--inner_gap_xxs);
+    }
+
+
+
+    .product_data .payment_methods .grid_row
+    {
+        --gap_x: var(--inner_gap_s);
+        --gap_y: var(--inner_gap_s);
+    }
+
+
+    .product_data .payment_methods .method
+    {
+        padding: var(--inner_gap_m);
+    }
+
+
+
+    .product_data .delivery_methods .method
+    {
+        min-height: 0;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .file .name,
+    .files .file .download_btn
+    {
+        font-size: var(--font_size);
+    }
+
+
+
     /*------------
         Footer
     ------------*/
