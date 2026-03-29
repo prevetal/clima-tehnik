@@ -1416,7 +1416,7 @@
 										<span>В наличии</span>
 									</div>
 
-									<button class="found_cheaper_btn">Нашли дешевле?</button>
+									<button class="found_cheaper_btn modal_btn" data-modal="found_cheaper_modal">Нашли дешевле?</button>
 								</div>
 
 								<div class="product_price">
@@ -1482,7 +1482,7 @@
 								</div>
 
 								<div class="buy">
-									<button class="quike_buy_btn">купить в 1 клик</button>
+									<button class="quike_buy_btn modal_btn" data-modal="quike_buy_modal">купить в 1 клик</button>
 
 									<button class="buy_btn">
 										<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
@@ -1495,7 +1495,7 @@
 								</div>
 
 								<div class="for_legal_entities">
-									<button class="btn">Запрос счета/КП для юр.лиц</button>
+									<button class="btn modal_btn" data-modal="request_invoice_modal">Запрос счета/КП для юр.лиц</button>
 
 									<div class="exp">Готовы предложить самые выгодные условия</div>
 								</div>
@@ -3593,6 +3593,260 @@
 			<div class="modal_desc">Скоро мы перезвоним вам и ответим на все ваши вопросы</div>
 
 			<button class="btn close_btn">продолжить</button>
+		</section>
+
+
+		<section class="modal" id="quike_buy_modal">
+			<div class="modal_title">Купить в 1 клик</div>
+
+			<div class="product">
+				<div class="thumb">
+					<img src="images/tmp/cart_product_thumb6.png" alt="" loading="lazy">
+				</div>
+
+				<div>
+					<div class="name">Hisense CITY DC Inverter AS-24UW4RBTCM00</div>
+
+					<div class="price">
+						<span class="current">67 500 ₽</span>
+						<div class="old">71 200</div>
+					</div>
+				</div>
+			</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">Имя*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Телефон*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="line contacts_method">
+					<div class="label">Способ связи</div>
+
+					<div class="grid_row field">
+						<label>
+							<input type="radio" name="contacts_method">
+							<span>WhatsApp</span>
+						</label>
+
+						<label>
+							<input type="radio" name="contacts_method" checked>
+							<span>Telegram</span>
+						</label>
+
+						<label>
+							<input type="radio" name="contacts_method">
+							<span>Телефон</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Комментарий к заказу, если необходимо"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">отправить</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>отправить</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="found_cheaper_modal">
+			<div class="modal_title">Нашли дешевле?</div>
+
+			<div class="modal_desc">Нашли товар дешевле?<br> Пришлите ссылку на страницу товара — мы сделаем скидку!</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">Имя*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Телефон*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Ссылка на товар другого магазина *"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">отправить</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>отправить</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="request_invoice_modal">
+			<div class="modal_title">Запрос счета/КП для юр. лиц</div>
+
+			<div class="modal_desc">Пришлите ваши контакты и мы подготовим для вас оптимальное предложение.</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">ИНН компании</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Телефон*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input">
+
+						<!-- <input type="tel" name="" value="" class="input error"> -->
+
+						<!-- <input type="tel" name="" value="" class="input success"> -->
+
+						<div class="label">ФИО контактного лица *</div>
+
+						<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+						<!-- <div class="success_text">Всё верно!</div> -->
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">отправить заявку</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>отправить</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
+		</section>
+
+
+		<section class="modal success_message" id="order_success_message_modal">
+			<div class="modal_title">Спасибо за заказ!</div>
+
+			<div class="modal_desc l_w">
+				<p>В ближайшее время мы свяжемся с вами по указанным контактам, чтобы уточнить детали по оплате и доставке.</p>
+
+				<p>Обратите внимание, что мы перезваниваем только в рабочее время.</p>
+			</div>
+
+			<button class="btn close_btn red">вернуться в каталог</button>
+		</section>
+
+
+		<section class="modal success_message" id="cheaper_success_message_modal">
+			<div class="modal_title">Спасибо за заявку!</div>
+
+			<div class="modal_desc m_w">
+				<p>Мы проверим присланную информацию и свяжемся с вами!</p>
+
+				<p>Обратите внимание, что мы перезваниваем только в рабочее время.</p>
+			</div>
+
+			<button class="btn close_btn red">вернуться в каталог</button>
+		</section>
+
+
+		<section class="modal success_message" id="invoice_success_message_modal">
+			<div class="modal_title">Спасибо за обращение!</div>
+
+			<div class="modal_desc m_w">
+				<p>В ближайшее время мы свяжемся с вами по указанным контактам.</p>
+
+				<p></p>Обратите внимание, что мы перезваниваем только в рабочее время.</p>
+			</div>
+
+			<button class="btn close_btn red">вернуться в каталог</button>
 		</section>
 
 

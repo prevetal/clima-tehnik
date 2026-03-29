@@ -679,6 +679,36 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	$('#quike_buy_modal form').submit(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show(
+			[{
+				src: '#order_success_message_modal',
+				type: 'inline'
+			}],
+			fancyOptions
+		)
+	})
+
+
+	$('#request_invoice_modal form').submit(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show(
+			[{
+				src: '#invoice_success_message_modal',
+				type: 'inline'
+			}],
+			fancyOptions
+		)
+	})
+
+
 	// Location
 	$('header .location .confirm .btn.close_btn').click(function(e) {
 		e.preventDefault()

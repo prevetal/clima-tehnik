@@ -1646,4 +1646,35 @@
         width: 100%;
         height: 320px;
     }
+
+
+
+    /*-----------------------
+        PopUp - Quike buy
+    -----------------------*/
+    #quike_buy_modal .product
+    {
+        margin-top: var(--inner_gap);
+    }
+
+
+    #quike_buy_modal .product .thumb
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    #quike_buy_modal .product .thumb + *
+    {
+        width: calc(100% - 80px - var(--inner_gap_m));
+
+        gap: var(--inner_gap_xxs);
+    }
+
+
+    #quike_buy_modal .product .name
+    {
+        font-size: var(--font_size);
+    }
 }
