@@ -595,6 +595,35 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	$('.mob_menu .catalog_menu .inner .btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	$('.mob_menu .catalog_menu .items a.sub_link').click(function(e) {
+		e.preventDefault()
+
+		const currentIndex = $(this).parent().index()
+
+		$(this).closest('.inner').addClass('hide')
+
+		console.log($('.mob_menu .catalog_menu .sub_items .sub').eq(currentIndex))
+
+		$('.mob_menu .catalog_menu .sub_items').addClass('show')
+		$('.mob_menu .catalog_menu .sub_items .sub').eq(currentIndex).show()
+	})
+
+
+	$('.mob_menu .catalog_menu .back_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.mob_menu .catalog_menu .sub_items').removeClass('show')
+		$('.mob_menu .catalog_menu .inner').removeClass('hide')
+	})
+
+
 	if (is_touch_device()) {
 		const subMenus = document.querySelectorAll('header .menu .sub')
 
@@ -710,10 +739,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Location
-	$('header .location .confirm .btn.close_btn').click(function(e) {
+	$('.location .confirm .btn.close_btn').click(function(e) {
 		e.preventDefault()
 
-		$('header .location .confirm').hide()
+		$('.location .confirm').hide()
 	})
 
 
