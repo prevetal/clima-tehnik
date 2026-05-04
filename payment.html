@@ -113,7 +113,7 @@
 							</div>
 
 							<div class="account">
-								<button class="btn login_btn">
+								<button class="btn login_btn modal_btn" data-modal="login_modal">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
 
 									<span>Войти</span>
@@ -1919,6 +1919,229 @@
 			<div class="modal_desc">Скоро мы перезвоним вам и ответим на все ваши вопросы</div>
 
 			<button class="btn close_btn">продолжить</button>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">Войти в личный кабинет</div>
+
+			<form action="" class="form">
+				<div class="columns">
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">Номер телефона</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Пароль</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="line recovery_password">
+					<div class="field">
+						<button class="btn modal_btn" data-modal="recovery_password_modal">Забыли пароль?</button>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn primary">войти</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>войти</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="recovery_password_modal">
+			<div class="modal_title row">
+				<button class="back_btn modal_btn" data-modal="login_modal">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+				</button>
+
+				<span>Восстановить пароль</span>
+			</div>
+
+			<div class="modal_desc">Введите ваш e-mail, который указывали при регистрации: </div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input">
+
+						<!-- <input type="email" name="" value="" class="input error"> -->
+
+						<!-- <input type="email" name="" value="" class="input success"> -->
+
+						<div class="label">E-mail *</div>
+
+						<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+						<!-- <div class="success_text">Всё верно!</div> -->
+					</div>
+				</div>
+
+				<div class="line exp">
+					Ссылка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn primary">восстановить пароль</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>восстановить пароль</button> -->
+				</div>
+			</form>
+
+			<div class="success">
+				<div class="desc">Информация по восстановлению доступа вы выслана на ваш email. Дождитесь письма и следуйте инструкциям.</div>
+
+				<button class="btn close_btn">хорошо</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="modal_title row">
+				<button class="back_btn modal_btn" data-modal="login_modal">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+				</button>
+
+				<span>Регистрация</span>
+			</div>
+
+			<form action="" class="form">
+				<div class="section">
+					<div class="title">Ваши данные</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+
+							<!-- <input type="text" name="" value="" class="input error"> -->
+
+							<!-- <input type="text" name="" value="" class="input success"> -->
+
+							<div class="label">Имя*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="" value="" class="input">
+
+							<!-- <input type="tel" name="" value="" class="input error"> -->
+
+							<!-- <input type="tel" name="" value="" class="input success"> -->
+
+							<div class="label">Телефон*</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="title">Данные для входа</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input">
+
+							<!-- <input type="email" name="" value="" class="input error"> -->
+
+							<!-- <input type="email" name="" value="" class="input success"> -->
+
+							<div class="label">E-mail *</div>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="title">Задайте пароль — не менее 8 символов, должен содержать латинские буквы и цифры.</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+
+							<!-- <input type="password" name="" value="" class="input error"> -->
+
+							<!-- <input type="password" name="" value="" class="input success"> -->
+
+							<div class="label">Пароль *</div>
+
+							<button type="button" class="toggle_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_eye"></use></svg>
+							</button>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="password" name="" value="" class="input">
+
+							<!-- <input type="password" name="" value="" class="input error"> -->
+
+							<!-- <input type="password" name="" value="" class="input success"> -->
+
+							<div class="label">Повторите пароль *</div>
+
+							<button type="button" class="toggle_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_eye"></use></svg>
+							</button>
+
+							<!-- <div class="error_text">Введены недопустимые символы</div> -->
+
+							<!-- <div class="success_text">Всё верно!</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn primary">зарегистрироваться</button>
+
+					<!-- <button type="submit" class="submit_btn" disabled>зарегистрироваться</button> -->
+				</div>
+
+				<div class="agree">Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных в соответствии с правилами магазина</div>
+			</form>
 		</section>
 
 

@@ -506,14 +506,17 @@ document.addEventListener('DOMContentLoaded', function() {
 			PREV: 'Предыдущий',
 			MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
 		},
-		tpl: {
-			closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close_big"></use></svg></button>',
+		on: {
+			ready: (fancybox) => {
+				const container = fancybox.getContainer()
 
-			main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
-				<div class="fancybox__backdrop"></div>
-				<div class="fancybox__carousel"></div>
-				<div class="fancybox__footer"></div>
-			</div>`,
+				const btn = container.querySelector('.is-close-button')
+
+				if (btn) {
+					btn.classList.add('is-close-btn')
+					btn.innerHTML = '<svg><use xlink:href="images/sprite.svg#ic_close_big"></use></svg>'
+				}
+			},
 		}
 	}
 
@@ -1058,6 +1061,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		parent.toggleClass('active')
 		parent.find('.data').slideToggle(300)
+	})
+
+
+	// Recovery password
+	$('#recovery_password_modal .form').submit(function(e) {
+		e.preventDefault()
+
+		$('#recovery_password_modal .modal_desc, #recovery_password_modal .form').hide()
+		$('#recovery_password_modal .success').fadeIn(300)
 	})
 })
 

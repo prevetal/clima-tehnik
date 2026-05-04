@@ -259,13 +259,13 @@ video.cover
 .fancybox__container
 {
     --fancybox-backdrop-bg: rgba(43, 47, 51, .8);
-    --f-close-button-width: 40px;
-    --f-close-button-height: 40px;
+    --f-close-button-width: 36px;
+    --f-close-button-height: 36px;
     --f-close-border-radius: 0;
     --f-close-button-color: #9f9f9f;
     --f-close-button-hover-color: var(--dark_color);
-    --f-close-button-svg-width: 20px;
-    --f-close-button-svg-height: 20px;
+    --f-close-button-svg-width: 16px;
+    --f-close-button-svg-height: 16px;
     --f-close-button-svg-stroke-width: 2;
     --f-close-button-bg: transparent;
     --f-close-button-hover-bg: transparent;
@@ -283,8 +283,8 @@ video.cover
 
 .f-button.is-close-button
 {
-    top: var(--inner_gap_m);
-    right: var(--inner_gap_m);
+    top: var(--inner_gap_l);
+    right: var(--inner_gap_l);
 }
 
 
@@ -4514,6 +4514,7 @@ aside .category_links .spoler_btn.active span + span
 
     opacity: 0;
     background: currentColor;
+    box-shadow: 0 0 0 1px var(--light_color);
 }
 
 
@@ -16713,6 +16714,48 @@ footer .creator a:hover span
 }
 
 
+.modal_title.row
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: var(--inner_gap_s);
+}
+
+
+.modal_title.row .back_btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 24px;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.modal_title.row .back_btn .icon
+{
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+}
+
+
+.modal_title.row span
+{
+    width: calc(100% - 40px);
+}
+
+
 .modal_desc
 {
     margin-top: var(--inner_gap);
@@ -16727,6 +16770,41 @@ footer .creator a:hover span
 .modal .form
 {
     margin-top: var(--inner_gap);
+}
+
+
+.modal .form .recovery_password .btn
+{
+    display: block;
+
+    margin-left: auto;
+
+    font-size: calc(var(--font_size_l) - 1px);
+    font-weight: 700;
+    line-height: 1;
+
+    transition: border-color .2s linear;
+
+    color: var(--primary_color);
+    border-bottom: 1px dotted;
+}
+
+
+.modal .form .recovery_password .btn:hover
+{
+    border-color: transparent;
+}
+
+
+.modal .form .submit_btn.primary
+{
+    background: var(--primary_color);
+}
+
+
+.modal .form .submit_btn.primary:hover
+{
+    background: var(--red_color);
 }
 
 
@@ -17214,4 +17292,104 @@ footer .creator a:hover span
 #quike_buy_modal .form
 {
     margin-top: var(--inner_gap);
+}
+
+
+
+/*----------------------
+    PopUp - Register
+----------------------*/
+#register_modal
+{
+    --modal_width: 543px;
+}
+
+
+#register_modal .form .section
+{
+    --form_line_gap: var(--inner_gap_s);
+}
+
+
+#register_modal .form .section + .section
+{
+    padding-top: var(--inner_gap_xxs);
+}
+
+
+#register_modal .form .section .title
+{
+    margin-bottom: var(--inner_gap_s);
+
+    font-size: calc(var(--font_size_l) - 1px);
+    font-weight: 700;
+    line-height: 1;
+
+    color: var(--black_color);
+}
+
+
+
+/*-------------------------------
+    PopUp - Recovery password
+-------------------------------*/
+#recovery_password_modal
+{
+    --modal_width: 543px;
+}
+
+
+#recovery_password_modal .modal_desc
+{
+    font-weight: 500;
+    line-height: calc(100% + 7px);
+
+    opacity: .6;
+}
+
+
+#recovery_password_modal .exp
+{
+    opacity: .6;
+}
+
+
+#recovery_password_modal .success
+{
+    display: none;
+
+    margin-top: var(--inner_gap);
+}
+
+
+#recovery_password_modal .success .desc
+{
+    font-weight: 500;
+    line-height: calc(100% + 7px);
+
+    opacity: .6;
+}
+
+
+#recovery_password_modal .success .btn
+{
+    width: 100%;
+    margin-top: var(--inner_gap);
+    padding: var(--inner_gap_s);
+
+    font-size: var(--font_size_s);
+    font-weight: 500;
+    line-height: 1;
+
+    transition: background .2s linear;
+
+    color: var(--light_color);
+    border-radius: var(--border_radius_s);
+    background: var(--primary_color);
+}
+
+
+#recovery_password_modal .success .btn:hover
+{
+    background: var(--red_color);
 }
