@@ -946,6 +946,200 @@
 
 
 
+    /*--------------
+        Services
+    --------------*/
+    .services .service .desc
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+    .services .bg
+    {
+        top: -324px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info
+    {
+        --sidebar_width: 220px;
+    }
+
+
+    .service_why .block_head
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .service_why .block_head .title
+    {
+        width: calc(100% - 440px - var(--inner_gap));
+    }
+
+
+    .service_why .block_head .desc
+    {
+        width: 440px;
+    }
+
+
+    .service_why .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .service_why .bg
+    {
+        top: -408px;
+    }
+
+
+
+    /*--------------------
+        Service prices
+    --------------------*/
+    .service_prices .block_head .title
+    {
+        width: calc(100% - 440px - var(--inner_gap_l));
+    }
+
+
+    .service_prices .block_head .desc
+    {
+        width: 440px;
+    }
+
+
+    .service_prices table th
+    {
+        padding-bottom: var(--inner_gap_s);
+    }
+
+
+    .service_prices table th + th,
+    .service_prices table td + td
+    {
+        padding-left: var(--inner_gap);
+    }
+
+
+    .service_prices table td.price
+    {
+        width: calc(180px + var(--inner_gap));
+    }
+
+
+
+    /*-----------------------
+        Service how order
+    -----------------------*/
+    .service_how_order .cart_products .info
+    {
+        width: calc(100% - 500px);
+    }
+
+
+    .service_how_order .cart_products .total_price
+    {
+        width: 124px;
+    }
+
+
+
+    /*------------------
+        Service next
+    ------------------*/
+    .service_next .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .service_next .bg
+    {
+        bottom: -452px;
+    }
+
+
+
+    /*------------------
+        Service when
+    ------------------*/
+    .service_when .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .service_when .bg
+    {
+        top: auto;
+        bottom: -480px;
+    }
+
+
+
+    /*--------------------
+        Service action
+    --------------------*/
+    .service_action .block_head
+    {
+        width: 100%;
+    }
+
+
+    .service_action .form
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------------
+        Service included 2
+    ------------------------*/
+    .services_included2 .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .services_included2 .grid_row > *:last-child
+    {
+        --width_multiplier: 2;
+    }
+
+
+    .services_included2 .bg
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Service steps
+    -------------------*/
+    .service_steps .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .service_steps .grid_row > *:last-child
+    {
+        --width_multiplier: 2;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

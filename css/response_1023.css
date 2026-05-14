@@ -822,6 +822,48 @@
 
 
 
+    /*--------------
+        Services
+    --------------*/
+    .services .grid_row
+    {
+        --items_per_line: 2;
+    }
+
+
+    .services .bg
+    {
+        top: -348px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info
+    {
+        --sidebar_width: 100%;
+    }
+
+
+    .service_info .content
+    {
+        order: 2;
+    }
+
+
+
+    /*-----------------
+        Service why
+    -----------------*/
+    .service_why .bg
+    {
+        top: -380px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

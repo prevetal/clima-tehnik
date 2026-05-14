@@ -1471,6 +1471,238 @@
 
 
 
+    /*--------------
+        Services
+    --------------*/
+    .services .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*-----------------
+        Service why
+    -----------------*/
+    .service_why .block_head .title,
+    .service_why .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .service_why .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .service_why .bg
+    {
+        top: auto;
+        bottom: -456px;
+    }
+
+
+
+    /*----------------------
+        Service included
+    ----------------------*/
+    .service_included .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+
+    /*--------------------
+        Service prices
+    --------------------*/
+    .service_prices .block_head .title,
+    .service_prices .block_head .desc
+    {
+        width: 100%;
+    }
+
+
+    .service_prices .list
+    {
+        margin-inline: calc(var(--cont_padding) * -1);
+    }
+
+
+    .service_prices .section
+    {
+        border-radius: 0;
+    }
+
+
+    .service_prices table th
+    {
+        padding-bottom: var(--inner_gap_xs);
+    }
+
+
+    .service_prices table td
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .service_prices table th + th,
+    .service_prices table td + td
+    {
+        padding-left: var(--inner_gap_s);
+    }
+
+
+    .service_prices table td.price
+    {
+        width: calc(100px + var(--inner_gap_s));
+    }
+
+
+
+    /*-----------------------
+        Service how order
+    -----------------------*/
+    .service_how_order .item .number
+    {
+        width: 52px;
+    }
+
+
+    .service_how_order .item .number + *
+    {
+        width: calc(100% - 52px - var(--inner_gap));
+    }
+
+
+    .service_how_order .cart_products
+    {
+        margin-inline: calc(var(--cont_padding) * -1);
+
+        border-radius: 0;
+    }
+
+
+    .service_how_order .cart_products .product
+    {
+        padding-block: var(--block_padding_xl) var(--inner_gap_xs);
+    }
+
+
+    .service_how_order .cart_products .product_check
+    {
+        top: var(--inner_gap_m);
+        left: var(--cont_padding);
+    }
+
+
+    .service_how_order .cart_products .btns
+    {
+        top: var(--inner_gap_m);
+        right: var(--cont_padding);
+    }
+
+
+    .service_how_order .cart_products .info
+    {
+        width: calc(100% - 100px - var(--inner_gap_m));
+    }
+
+
+    .service_how_order .cart_products .total_price
+    {
+        width: auto;
+    }
+
+
+
+    /*------------------
+        Service next
+    ------------------*/
+    .service_next .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .service_next .bg
+    {
+        bottom: -440px;
+    }
+
+
+
+    /*------------------
+        Service when
+    ------------------*/
+    .service_when .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .service_when .bg
+    {
+        bottom: -452px;
+    }
+
+
+
+    /*--------------------
+        Service action
+    --------------------*/
+    .service_action
+    {
+        padding-block: var(--inner_gap_l);
+        padding-inline: var(--inner_gap_l);
+    }
+
+
+    .service_action .bg
+    {
+        top: -108px;
+        left: -300px;
+
+        width: 1000px;
+    }
+
+
+
+    /*------------------------
+        Service included 2
+    ------------------------*/
+    .services_included2 .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .services_included2 .grid_row > *:last-child
+    {
+        --width_multiplier: 1;
+    }
+
+
+
+    /*-------------------
+        Service steps
+    -------------------*/
+    .service_steps .grid_row
+    {
+        --items_per_line: 1;
+    }
+
+
+    .service_steps .grid_row > *:last-child
+    {
+        --width_multiplier: 1;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

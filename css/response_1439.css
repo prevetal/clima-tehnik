@@ -1028,6 +1028,39 @@
 
 
 
+    /*-----------------
+        Service why
+    -----------------*/
+    .service_why .bg
+    {
+        top: -512px;
+    }
+
+
+
+    /*--------------------
+        Service action
+    --------------------*/
+    .service_action
+    {
+        padding-block: var(--cont_padding_double);
+        padding-inline: var(--cont_padding_double);
+    }
+
+
+    .service_action .block_head
+    {
+        width: calc(100% - 460px - var(--inner_gap));
+    }
+
+
+    .service_action .form
+    {
+        width: 460px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

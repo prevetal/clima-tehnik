@@ -258,6 +258,32 @@ document.addEventListener('DOMContentLoaded', function() {
 	certs.forEach((el, i) => {
 		el.classList.add('certs_s' + i)
 
+		let breakpoints = {
+			0: {
+				spaceBetween: 8,
+			},
+			768: {
+				spaceBetween: 16,
+			},
+			1024: {
+				spaceBetween: 24,
+			},
+			1280: {
+				spaceBetween: 31,
+			}
+		}
+
+		if (el.closest('.service_certs')) {
+			breakpoints = {
+				0: {
+					spaceBetween: 8,
+				},
+				768: {
+					spaceBetween: 16,
+				},
+			}
+		}
+
 		let options = {
 			loop: false,
 			loopAdditionalSlides: 1,
@@ -271,20 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				prevEl: '.swiper-button-prev'
 			},
 			slidesPerView: 'auto',
-			breakpoints: {
-				0: {
-					spaceBetween: 8,
-				},
-				768: {
-					spaceBetween: 16,
-				},
-				1024: {
-					spaceBetween: 24,
-				},
-				1280: {
-					spaceBetween: 31,
-				}
-			}
+			breakpoints: breakpoints
 		}
 
 		certsSliders.push(new Swiper('.certs_s' + i, options))
