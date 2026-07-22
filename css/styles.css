@@ -2241,6 +2241,46 @@ header .industrial .btn.active .icon
 
 
 
+header.fixed
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    margin: 0;
+
+    z-index: 99;
+    animation: moveDown .5s;
+
+    background: var(--bg);
+    box-shadow: 0 4px 28px 0 rgba(161, 180, 216, .20);
+}
+
+
+header.fixed .top,
+header.fixed .bottom
+{
+    display: none;
+}
+
+
+header.fixed .data
+{
+    padding-block: var(--inner_gap_xs);
+}
+
+
+@keyframes moveDown
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+}
+
+
+
 /*-----------------
     Mob. header
 -----------------*/
@@ -6235,6 +6275,12 @@ aside .category_links .spoler_btn.active span + span
     opacity: .4;
     color: #3b538b;
     background: #beceef;
+}
+
+
+.products .product:hover .swiper-pagination
+{
+    opacity: 1;
 }
 
 

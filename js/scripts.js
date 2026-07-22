@@ -59,19 +59,71 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Products slider
 	const productsSliders = [],
-		products = document.querySelectorAll('.products:not(.skip) .swiper')
+		productsThumbSliders = [],
+		products = document.querySelectorAll('.products:not(.skip) .swiper.main'),
+		productsThumb = document.querySelectorAll('.products:not(.skip) .product .thumb .swiper')
 
-	products.forEach((el, i) => {
-		el.classList.add('products_s' + i)
+	productsThumb.forEach((el, i) => {
+		el.classList.add('products_thumb_s' + i)
 
 		let options = {
-			loop: false,
-			loopAdditionalSlides: 1,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
 			lazy: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			spaceBetween: 0,
+			slidesPerView: 1,
+			nested: true,
+		}
+
+		productsThumbSliders.push(new Swiper('.products_thumb_s' + i, options))
+
+
+		const thumbEl = el.closest('.thumb'),
+			swiperInstance = productsThumbSliders[i],
+			slidesCount = el.querySelectorAll('.swiper-slide').length
+
+		if (slidesCount <= 1) return
+
+		let lastIndex = -1
+
+		thumbEl.addEventListener('mousemove', (e) => {
+			const rect = thumbEl.getBoundingClientRect(),
+				x = e.clientX - rect.left,
+				percent = x / rect.width
+
+			let index = Math.floor(percent * slidesCount)
+			index = Math.min(Math.max(index, 0), slidesCount - 1)
+
+			if (index !== lastIndex) {
+				lastIndex = index
+				swiperInstance.slideTo(index)
+			}
+		})
+
+		thumbEl.addEventListener('mouseleave', () => {
+			lastIndex = -1
+			swiperInstance.slideTo(0)
+		})
+	})
+
+
+	products.forEach((el, i) => {
+		el.classList.add('products_main_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
@@ -106,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		}
 
-		productsSliders.push(new Swiper('.products_s' + i, options))
+		productsSliders.push(new Swiper('.products_main_s' + i, options))
 	})
 
 
@@ -1089,6 +1141,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 window.addEventListener('load', function () {
+	// Fixed header
+	headerInit = true,
+	headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+
+
 	// Product delivery methods
 	document.querySelectorAll('.product_data .delivery_methods .grid_row').forEach(el => {
 		let styles = getComputedStyle(el)
@@ -1107,6 +1171,22 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Fixed header
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > headerHeight
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
 
 
 		// Products
@@ -1143,6 +1223,16 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
+
+
+
+window.addEventListener('scroll', function () {
+	// Fixed header
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+})
+
 
 
 // Compare height

@@ -73,6 +73,12 @@
     /*------------
         Header
     ------------*/
+    .header_wrap
+    {
+        height: auto !important;
+    }
+
+
     header
     {
         display: none;
