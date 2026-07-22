@@ -299,9 +299,9 @@
 
     .products .list_full .product .unification
     {
-        width: calc(100% - 594px);
-
         gap: var(--inner_gap);
+
+        width: calc(100% - 594px);
     }
 
 
@@ -414,9 +414,9 @@
 
     .articles .article
     {
-        padding: var(--inner_gap_xxs);
-
         gap: var(--inner_gap);
+
+        padding: var(--inner_gap_xxs);
     }
 
 
@@ -534,9 +534,9 @@
 
     .contacts_info .write_to_us
     {
-        margin-top: 48px;
-
         gap: 40px;
+
+        margin-top: 48px;
     }
 
 
@@ -569,11 +569,11 @@
     --------------*/
     .projects .item
     {
+        gap: var(--inner_gap_m);
+
         padding-block: var(--inner_gap_m) var(--inner_gap);
 
         font-size: var(--font_size);
-
-        gap: var(--inner_gap_m);
     }
 
 

@@ -137,7 +137,6 @@
     .page_head .row
     {
         justify-content: space-between;
-
         gap: var(--inner_gap);
     }
 
@@ -277,12 +276,12 @@
     {
         display: grid;
         overflow: auto;
+        gap: var(--inner_gap_xs);
 
         width: calc(100% + var(--cont_padding_double));
         margin-inline: calc(var(--cont_padding) * -1);
         padding-inline: var(--cont_padding);
 
-        gap: var(--inner_gap_xs);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--cont_padding);
@@ -325,13 +324,13 @@
     {
         display: grid;
         overflow: auto;
+        gap: var(--inner_gap_xs);
 
         width: calc(100% + var(--cont_padding_double));
         margin-block: 0;
         margin-inline: calc(var(--cont_padding) * -1);
         padding-inline: var(--cont_padding);
 
-        gap: var(--inner_gap_xs);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--cont_padding);
@@ -500,10 +499,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 4px;
 
         width: 100%;
-
-        gap: 4px;
     }
 
 
@@ -765,9 +763,9 @@
 
     .contacts_info .info
     {
-        margin-top: var(--block_padding_xl);
-
         gap: var(--inner_gap_l);
+
+        margin-top: var(--block_padding_xl);
     }
 
 
@@ -781,9 +779,9 @@
 
     .contacts_info .write_to_us
     {
-        margin-top: var(--block_padding_xl);
-
         gap: var(--block_padding_xl);
+
+        margin-top: var(--block_padding_xl);
     }
 
 
@@ -915,10 +913,9 @@
         align-items: flex-start;
         flex-direction: column;
         order: 2;
+        gap: var(--inner_gap_s);
 
         padding-block: var(--inner_gap_s);
-
-        gap: var(--inner_gap_s);
     }
 
 
@@ -1110,9 +1107,9 @@
     -----------------------*/
     .lk_info .profile .type
     {
-        padding-bottom: 0;
-
         gap: var(--inner_gap_xs);
+
+        padding-bottom: 0;
     }
 
 
@@ -1128,9 +1125,9 @@
     ------------*/
     .orders .filter
     {
-        margin-left: 0;
-
         gap: var(--inner_gap_xs);
+
+        margin-left: 0;
     }
 
 
@@ -1335,12 +1332,12 @@
 
     .filter_selected .btn
     {
+        gap: 4px;
+
         padding-block: 4px;
         padding-inline: var(--inner_gap_xs) 4px;
 
         font-size: var(--font_size_xs);
-
-        gap: 4px;
     }
 
 
@@ -1725,9 +1722,9 @@
 
     footer .data .links_wrap
     {
-        width: 100%;
-
         gap: var(--inner_gap);
+
+        width: 100%;
     }
 
 
@@ -1806,13 +1803,12 @@
     {
         align-content: center;
         align-items: center;
+        gap: var(--inner_gap_xxs);
 
         width: 100%;
         margin-top: var(--inner_gap);
 
         text-align: center;
-
-        gap: var(--inner_gap_xxs);
     }
 
 
@@ -1899,9 +1895,9 @@
 
     #quike_buy_modal .product .thumb + *
     {
-        width: calc(100% - 80px - var(--inner_gap_m));
-
         gap: var(--inner_gap_xxs);
+
+        width: calc(100% - 80px - var(--inner_gap_m));
     }
 
 

@@ -28,13 +28,13 @@
         display: grid;
         overflow: auto;
         justify-content: flex-start;
+        gap: var(--inner_gap_xs);
 
         width: calc(100% + var(--cont_padding_double));
         margin-block: 0 var(--inner_gap);
         margin-inline: calc(var(--cont_padding) * -1);
         padding-inline: var(--cont_padding);
 
-        gap: var(--inner_gap_xs);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--cont_padding);
@@ -198,10 +198,10 @@
     -------------*/
     .banners .banner
     {
+        gap: var(--inner_gap);
+
         min-height: 260px;
         padding: var(--inner_gap);
-
-        gap: var(--inner_gap);
     }
 
 
@@ -285,8 +285,8 @@
     {
         display: grid;
         overflow: auto;
-
         gap: var(--inner_gap_xs);
+
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--inner_gap_xs);
@@ -566,10 +566,10 @@
 
     .stock_info .data
     {
+        gap: var(--inner_gap);
+
         width: calc(100% - 400px - var(--inner_gap));
         min-height: 0;
-
-        gap: var(--inner_gap);
     }
 
 
@@ -593,6 +593,7 @@
     {
         display: grid;
         overflow: auto;
+        gap: var(--inner_gap_xs);
 
         width: calc(100% + var(--cont_padding_double));
         margin-inline: calc(var(--cont_padding) * -1);
@@ -601,7 +602,6 @@
 
         border-radius: 0;
 
-        gap: var(--inner_gap_xs);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--cont_padding);
@@ -642,6 +642,7 @@
     {
         display: grid;
         overflow: auto;
+        gap: var(--inner_gap_xs);
 
         width: calc(100% + var(--cont_padding_double));
         margin-inline: calc(var(--cont_padding) * -1);
@@ -650,7 +651,6 @@
 
         border-radius: 0;
 
-        gap: var(--inner_gap_xs);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--cont_padding);
@@ -762,9 +762,9 @@
 
     .orders .order .product
     {
-        width: 88px;
-
         gap: 4px;
+
+        width: 88px;
     }
 
 
@@ -1200,7 +1200,6 @@
     footer .bottom .links
     {
         flex-direction: column;
-
         gap: 0;
     }
 }

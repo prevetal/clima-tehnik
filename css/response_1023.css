@@ -34,9 +34,9 @@
     -------------*/
     aside
     {
-        margin-bottom: var(--inner_gap_l);
-
         gap: var(--block_padding_l);
+
+        margin-bottom: var(--inner_gap_l);
     }
 
 
@@ -64,16 +64,15 @@
     aside .links
     {
         display: none;
-
         gap: var(--inner_gap_s);
     }
 
 
     aside .links .items
     {
-        font-size: var(--font_size);
-
         gap: var(--inner_gap_xs);
+
+        font-size: var(--font_size);
     }
 
 
@@ -276,13 +275,13 @@
     {
         display: grid;
         overflow: auto;
+        gap: var(--inner_gap_s);
 
         width: calc(100% + var(--cont_padding_double));
         margin-block: 0 var(--inner_gap);
         margin-inline: calc(var(--cont_padding) * -1);
         padding-inline: var(--cont_padding);
 
-        gap: var(--inner_gap_s);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--cont_padding);
@@ -453,13 +452,13 @@
         display: grid;
         overflow: auto;
         justify-content: flex-start;
+        gap: var(--inner_gap_xs);
 
         width: calc(100% + var(--inner_gap) * 2);
         margin-block: 0;
         margin-inline: calc(var(--inner_gap) * -1);
         padding-inline: var(--inner_gap);
 
-        gap: var(--inner_gap_xs);
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         scroll-padding: 0 var(--inner_gap);
@@ -587,9 +586,9 @@
     ------------*/
     .orders .filter
     {
-        margin-left: calc(var(--inner_gap_xs) * -1);
-
         gap: 0;
+
+        margin-left: calc(var(--inner_gap_xs) * -1);
     }
 
 
@@ -881,11 +880,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: var(--block_padding);
 
         width: 100%;
         margin-bottom: var(--block_padding_xl);
-
-        gap: var(--block_padding);
     }
 
 
