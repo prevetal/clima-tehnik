@@ -1822,6 +1822,27 @@
 
 
 
+    /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        gap: var(--inner_gap_xs);
+
+        padding-block: var(--inner_gap_xs);
+        padding-inline: var(--inner_gap_xs);
+    }
+
+
+    .cookie .text
+    {
+        font-size: var(--font_size_xs);
+
+        text-align: left;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/

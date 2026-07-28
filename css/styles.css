@@ -17753,6 +17753,84 @@ footer .creator a:hover span
 
 
 
+/*------------
+    Cookie
+------------*/
+.cookie
+{
+    position: fixed;
+    right: 0;
+    bottom: var(--inner_gap);
+    left: 0;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: var(--block_padding_xl);
+
+    width: var(--content_width);
+    max-width: calc(100vw - var(--cont_padding_double));
+    margin-inline: auto;
+    padding-block: var(--inner_gap_xxs);
+    padding-inline: var(--inner_gap_s);
+
+    z-index: 10;
+
+    border-radius: 17px;
+    background: rgba(0, 166, 226, .23);
+}
+
+
+.cookie.show
+{
+    display: flex;
+}
+
+
+.cookie .text
+{
+    font-weight: 500;
+    line-height: calc(100% + 7px);
+
+    text-align: center;
+}
+
+
+.cookie .text a
+{
+    text-decoration: none;
+
+    color: var(--primary_color);
+}
+
+
+.cookie .btn
+{
+    height: 40px;
+    padding-inline: var(--inner_gap_m);
+
+    font-weight: 700;
+    line-height: 1;
+
+    transition: background .2s linear;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    color: var(--light_color);
+    border-radius: 8px;
+    background: var(--red_color);
+}
+
+
+.cookie .btn:hover
+{
+    background: var(--primary_color);
+}
+
+
+
 /*-----------
     PopUp
 -----------*/
