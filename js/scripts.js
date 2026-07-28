@@ -1136,6 +1136,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('#recovery_password_modal .modal_desc, #recovery_password_modal .form').hide()
 		$('#recovery_password_modal .success').fadeIn(300)
 	})
+
+
+	// Cookie
+	var cookieStatus = localStorage.getItem('cookieAccepted')
+
+    if (!cookieStatus) {
+        $('.cookie').addClass('show')
+    }
+
+    $('.cookie .btn').on('click', function () {
+        localStorage.setItem('cookieAccepted', '1')
+
+        $('.cookie').removeClass('show')
+    })
 })
 
 

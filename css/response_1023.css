@@ -941,6 +941,22 @@
 
 
 
+    /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .cookie .text
+    {
+        line-height: calc(100% + 2px);
+    }
+
+
+
     /*------------------
         PopUp - City
     ------------------*/
