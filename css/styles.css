@@ -17778,8 +17778,9 @@ footer .creator a:hover span
 
     z-index: 10;
 
+    color: var(--dark_color);
     border-radius: 17px;
-    background: rgba(0, 166, 226, .23);
+    background: #c6e7f3;
 }
 
 
